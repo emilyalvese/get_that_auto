@@ -1,5 +1,9 @@
+<<<<<<< Updated upstream
  DROP DATABASE  IF EXISTS get_that_auto ;
 
+=======
+DROP DATABASE IF EXISTS get_that_auto;
+>>>>>>> Stashed changes
 
 CREATE DATABASE IF NOT EXISTS get_that_auto;
 
@@ -72,7 +76,6 @@ CREATE TABLE IF NOT EXISTS `fornecedores` (
   `endereco` VARCHAR(45) NOT NULL,
   `nome` VARCHAR(45) NOT NULL,
   `telefone` INT NOT NULL,
-  `fornecedorescol` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`cnpj`),
   CONSTRAINT `fk_fornecedores_enderecos` FOREIGN KEY (`enderecos_cep`) REFERENCES `enderecos` (`cep`)
 );
@@ -124,6 +127,7 @@ CREATE TABLE IF NOT EXISTS `carrinhos` (
   ) REFERENCES `vendaRegistros` (`idvenda`, `vendedores_idvendedores`)
 );
 
+<<<<<<< Updated upstream
 insert into enderecos (cep, rua, bairro, cidade, estado) values ('8595', 'Holmberg', 'Fullstone', '611 Parkside Center', 'Autumn Leaf');
 insert into enderecos (cep, rua, bairro, cidade, estado) values ('1973', 'Oak Valley', 'MacGowing', '638 Myrtle Road', 'Service');
 insert into enderecos (cep, rua, bairro, cidade, estado) values ('363', 'Prairieview', 'Mussared', '4483 Artisan Avenue', 'Eagle Crest');
@@ -176,4 +180,31 @@ insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (2
 insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (23, 1450.41, 'Quintana', 'Mountjoy', 'qmountjoym@indiatimes.com');
 insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (24, 2494.51, 'Ashlie', 'Reaney', 'areaneyn@google.com.hk');
 insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (25, 2527.39, 'Tedie', 'Hartwell', 'thartwello@thetimes.co.uk');
+=======
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (82, 68, '442 Donald Avenue', 'Alyosha O''Bradain', 23);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (21, 7, '7455 Namekagon Place', 'Mada McPeck', 92);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (64, 16, '09 Meadow Vale Street', 'Lita Balentyne', 6);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (64, 12, '448 Hermina Junction', 'Reidar Tollady', 25);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (97, 36, '922 Blue Bill Park Court', 'Shaylah Tear', 30);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (18, 41, '538 Bluestem Way', 'Arvy Till', 99);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (78, 52, '67017 Bunker Hill Plaza', 'Tommy Raubenheimers', 25);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (97, 55, '12 Roth Avenue', 'Geoffry O''Doherty', 90);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (26, 62, '0467 Lawn Hill', 'Damara Jesper', 28);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (14, 74, '6197 Charing Cross Parkway', 'Monah Donovin', 16);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (98, 8, '191 Lotheville Point', 'Miguelita O''Scollee', 99);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (83, 74, '671 Tomscot Place', 'Elaina Soldan', 64);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (46, 39, '3 Spohn Point', 'Valentia Lamasna', 22);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (41, 60, '6475 Debs Parkway', 'Alexandro Arlet', 79);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (16, 45, '9 Sunnyside Avenue', 'Weider Cultcheth', 2);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (21, 3, '58973 Buell Crossing', 'Trev Iglesia', 42);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (40, 43, '334 Columbus Trail', 'Gale Kording', 69);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (63, 61, '747 Jana Street', 'Cam Duncanson', 68);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (94, 88, '353 Rusk Junction', 'Wendye Moverley', 48);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (58, 89, '68694 Bluejay Point', 'Ephrayim Ludlam', 24);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (38, 31, '4698 Montana Hill', 'Melody Loughman', 63);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (20, 35, '318 Warbler Plaza', 'Sim Glasper', 67);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (40, 71, '03870 Graceland Drive', 'Mollee Albertson', 49);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (92, 16, '63 7th Drive', 'Lisle Basnall', 6);
+insert into fornecedores (cnpj, enderecos_cep, endereco, nome, telefone) values (84, 80, '9 Grim Drive', 'Antons Madle', 29);
+>>>>>>> Stashed changes
 
