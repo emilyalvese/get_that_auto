@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
  DROP DATABASE  IF EXISTS get_that_auto ;
+=======
+DROP DATABASE IF EXISTS get_that_auto ;
+>>>>>>> Stashed changes
 
 CREATE DATABASE IF NOT EXISTS get_that_auto;
 
@@ -9,9 +13,8 @@ USE get_that_auto;
 -- Table .`vendedores`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `vendedores` (
-  `idvendedores` INT NOT NULL,
+  `idVendedores` INT NOT NULL,
   `salario` DOUBLE NOT NULL,
-  `porcentagemComissao` DOUBLE NOT NULL,
   `nome` VARCHAR(45) NOT NULL,
   `sobrenome` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
