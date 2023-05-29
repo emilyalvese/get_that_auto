@@ -1,8 +1,5 @@
-<<<<<<< Updated upstream
  DROP DATABASE  IF EXISTS get_that_auto ;
-=======
-DROP DATABASE IF EXISTS get_that_auto ;
->>>>>>> Stashed changes
+
 
 CREATE DATABASE IF NOT EXISTS get_that_auto;
 
@@ -152,3 +149,31 @@ insert into enderecos (cep, rua, bairro, cidade, estado) values ('16', 'Golf', '
 insert into enderecos (cep, rua, bairro, cidade, estado) values ('93', 'Kinsman', 'Shorrock', '424 Mallard Center', 'Warner');
 insert into enderecos (cep, rua, bairro, cidade, estado) values ('312', 'Dwight', 'Brewitt', '85 Muir Alley', 'Huxley');
 insert into enderecos (cep, rua, bairro, cidade, estado) values ('14', 'Fieldstone', 'Buckney', '9 Dayton Plaza', 'Waubesa');
+
+
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (1, 2574.89, 'Garreth', 'Espinoy', 'gespinoy0@cisco.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (2, 1883.12, 'Jess', 'McMichan', 'jmcmichan1@privacy.gov.au');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (3, 2406.64, 'Kalli', 'Matthisson', 'kmatthisson2@yahoo.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (4, 1844.79, 'Brigg', 'McNeill', 'bmcneill3@issuu.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (5, 2043.41, 'Othilia', 'Islip', 'oislip4@house.gov');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (6, 1413.24, 'Carina', 'Leupoldt', 'cleupoldt5@mediafire.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (7, 1386.02, 'Sol', 'Winspur', 'swinspur6@geocities.jp');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (8, 2896.38, 'Caressa', 'Clair', 'cclair7@google.ca');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (9, 2559.79, 'Wallis', 'Sante', 'wsante8@mashable.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (10, 2133.2, 'Saundra', 'Deport', 'sdeport9@newyorker.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (11, 1437.69, 'Calla', 'Poschel', 'cposchela@yandex.ru');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (12, 2765.86, 'Averell', 'Poxson', 'apoxsonb@gnu.org');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (13, 1295.16, 'Maggie', 'Revill', 'mrevillc@irs.gov');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (14, 2207.62, 'Jsandye', 'Benyan', 'jbenyand@huffingtonpost.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (15, 2227.54, 'Lilly', 'Presser', 'lpressere@linkedin.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (16, 1631.18, 'Velma', 'Sturdy', 'vsturdyf@imdb.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (17, 1697.44, 'Merrel', 'Foran', 'mforang@mashable.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (18, 1472.86, 'Angelle', 'Nuccii', 'anucciih@webs.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (19, 2900.21, 'Maggie', 'Allright', 'mallrighti@surveymonkey.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (20, 2589.45, 'Blaire', 'Elstone', 'belstonej@creativecommons.org');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (21, 2122.06, 'Link', 'Wason', 'lwasonk@examiner.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (22, 2721.89, 'Mahmud', 'Sanders', 'msandersl@dmoz.org');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (23, 1450.41, 'Quintana', 'Mountjoy', 'qmountjoym@indiatimes.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (24, 2494.51, 'Ashlie', 'Reaney', 'areaneyn@google.com.hk');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (25, 2527.39, 'Tedie', 'Hartwell', 'thartwello@thetimes.co.uk');
+
