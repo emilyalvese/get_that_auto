@@ -23,11 +23,12 @@ CREATE TABLE IF NOT EXISTS `vendedores` (
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `enderecos` (
   `cep` INT NOT NULL,
-  `rua` VARCHAR(45) NOT NULL,
+  `endereco_id` INT NOT NULL,
+   `rua` VARCHAR(45) NOT NULL,
   `bairro` VARCHAR(45) NOT NULL,
   `cidade` VARCHAR(45) NOT NULL,
   `estado` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`cep`)
+  PRIMARY KEY (`endereco_id`)
 );
 
 -- -----------------------------------------------------
@@ -38,9 +39,9 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `nome` VARCHAR(45) NOT NULL,
   `sobrenome` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
-  `enderecos_cep` INT NOT NULL,
+  `enderecos_id` INT NOT NULL,
   PRIMARY KEY (`pessoas_cpf`),
-  CONSTRAINT `fk_clientes_enderecos1` FOREIGN KEY (`enderecos_cep`) REFERENCES `enderecos` (`cep`)
+  CONSTRAINT `fk_clientes_enderecos1` FOREIGN KEY (`enderecos_id`) REFERENCES `enderecos` (`endereco_id`)
 );
 
 -- -----------------------------------------------------
@@ -175,6 +176,63 @@ insert into produto (idprodutos, nome, imagemProduto, altura, largura, quantidad
 insert into produto (idprodutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (100, 'Jacques Sill', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALoSURBVDjLhZP9S1NRHIf3D+gfURRhL2gFFQYFiSkEIkZFI8kfyjIUNNFCrOnMFxKJMTfCKNEl5AxUVCx1bm6NdMMkx97ci5vTjTn3otvdy9326dxbiinRhQ/n3MN9nnO+557DAcDZH7VanSuXy4VTU1OL4+Pjm8PDw4HBwUGTRCIRf+wXXz34/V5Ho9FkEFhE4ITT6YTf78f29jYikQhCoRAMBj3E3a/otyJ+v1DQnvmX4A88abVakU6nEY1GwUgcDgd8Ph+SySTSSQo0ZYJ8egCvO+qV7W2NmXsCZmYGTiQSYB6apsG8WywWBINBVhqnNhAL65GKreDrRC+aX1b2swICXyTLToXDYRbY2dlhJevr6zAajWDGk0kakZAR8bCBXUWCpKb6Uar26ZNcDoFFa2trYGIymViIqZkRud1uth+PhYhAR0An6W+RFcahVCpRXl4u4mRnZ+N/qbh/BZMfShDZ9rLiQCAAm82GsrKyJVag0+lgNpuhUqnQ19fHQkzrcrlgNi5DN/EAWytS2Ba6Ybfbsbq6Co/HAy6X62MFDLwLMRImzBiTlppr2DRIQIct0I/chVY7i3mdBUbHBopLbm0dEjDZhc3LKmgGihDbHENsowt+6zgWx+qh0jvwRWtEQdFN/aESdkU5OUQ8y4fPNITYWjPm2s8hsTWEH+/zMK8exTvpBApuFPX8cxNLiy/APtOAuLcPlKUMc205iDrqEbRNYKH3NvILC1N5+dcvsQdJIBCIFAoFPEHyK9d/Qm/XYklaigDZuOhqLSLmO7+zco+U8gYOhQDC6lzt3kns7OzM4Lc2T38alcDmNUD3TQjHXBfiHjE7e2SFS0o4y7aUrQKUewQK/mmvoulk1t5l4vF4Gc8a6noeVz2k1d15oHxWxP0ziHnJHnil+/IZ9I4Oru8SyBqOSzkHr2dVVeVlRcf5qKI1JyVvyU7Lms6kZbxTKdmLLFrWeCJGIGrm+TFqpv4oNV13RPkLngD4bMIOcuMAAAAASUVORK5CYII=', 49, 85, 35, '', 58, 74, 8);
 insert into produto (idprodutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (95, 'Inglis Boyde', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAH0SURBVDjLxZPPS1RxFMU/7800vglR0hkNRDKHUAwpgyxSiSgwsiFqEbRIWkW47l+IYNa1aOGqoFYJYRiBkeAwYQjmj5GBHJOyVAYZR6b3Zt73e78tZMDKnQsPXDjcczlwL+daxhj2A5t94uANghUST6SiwHMR6RQtIa00O6UcpZSvfbWgfP3o89Nb7/Y0AFK97ZHY6ZYj2FhoEZSABZSVJru61fti7MtbIPCfQTyRqg7axJzNBV5OLHIxfo/ZqQl8bVhd+Ur31btkUyNszGVsuP33CvFE6qiIjHa11vNtNklNQwsFV1H0FGvfsygxbBUVoqGpoYbmSw9NVaQto5W+sTzyIGNdezz5uq8tevNCe5SldY980aeshLIylHyh5O/w2sMBYo1hlIZPM0u8n5ibWnkzdC4oWgbOnoiQ+elScBUlJZR9oayEkm92zHyh8Ntnec1FDPSebOFjarG7+fqTuqBWOmQMFH/MMPbqGaEqhzN9A5w6348Sg9KCFlian2JydJhgKMyv8H1ChwJ4HtVW15U7Rm2vo7Y3iEbqsG2b9Vweq7YV4+aoRN0qbRKN1CMi5PJFtNOE29h/zKoMdHR0ZHt6eo47jsP4+Ph8Op3u3H3tiu55HtPT0x/S6fTlf3MwmEwmE4ALDO8Rut36UKVpHfg3/gGTgwnlYQ1oPAAAAABJRU5ErkJggg==', 26, 53, 62, '', 56, 9, 35);
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('222-26-2238', 'Marley', 'Aphale', 'maphale0@geocities.com', 1);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('212-21-3454', 'Joanna', 'oldey', 'joldey1@baidu.com', 2);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('829-46-3144', 'Jobey', 'Ranshaw', 'jranshaw2@wix.com', 3);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('768-54-1784', 'Miguela', 'Gettens', 'mgettens3@imdb.com', 4);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('103-96-6036', 'Olivia', 'Benedito', 'obenedito4@goo.gl', 5);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('521-47-4768', 'Mariel', 'Wheater', 'mwheater5@bluehost.com', 6);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('281-16-0955', 'Ermina', 'Renfree', 'erenfree6@archive.org', 7);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('882-77-6294', 'Mel', 'Flagg', 'mflagg7@vistaprint.com', 8);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('747-48-3506', 'Pennie', 'Licas', 'plicas8@eventbrite.com', 9);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('577-03-7388', 'Ramsey', 'Pickavant', 'rpickavant9@cisco.com', 10);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('133-18-1424', 'Julio', 'Povey', 'jpoveya@360.cn', 11);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('431-43-6733', 'Sonya', 'Rollett', 'srollettb@slate.com', 12);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('285-13-9482', 'Leda', 'Dreossi', 'ldreossic@pagesperso-orange.fr', 13);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('381-72-4267', 'Rudy', 'Selwyn', 'rselwynd@hp.com', 14);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('534-05-4225', 'Lottie', 'Marchenko', 'lmarchenkoe@telegraph.co.uk', 15);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('154-98-6955', 'Nathalia', 'Zincke', 'nzinckef@marketwatch.com', 16);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('272-81-6143', 'Jeanette', 'Ayto', 'jaytog@sfgate.com', 17);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('724-09-1791', 'Viole', 'Marchetti', 'vmarchettih@typepad.com', 18);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('854-46-4662', 'Paulo', 'Hugnet', 'phugneti@addthis.com', 19);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('387-21-7391', 'Cristin', 'BURWIN', 'cburwinj@fastcompany.com', 20);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('167-29-6885', 'Norman', 'Roubert', 'nroubertk@sun.com', 21);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('680-57-0180', 'Milissent', 'Gillbee', 'mgillbeel@delicious.com', 22);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('847-91-7766', 'Courtnay', 'Gwilliams', 'cgwilliamsm@etsy.com', 23);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('676-14-9577', 'Rivalee', 'Feldon', 'rfeldonn@twitter.com', 24);
+insert into clientes (pessoas_cpf, nome, sobrenome, email, endereco_id) values ('654-27-0414', 'Nathanael', 'Enocksson', 'nenockssono@microsoft.com', 25);
+
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (1, 2574.89, 'Garreth', 'Espinoy', 'gespinoy0@cisco.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (2, 1883.12, 'Jess', 'McMichan', 'jmcmichan1@privacy.gov.au');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (3, 2406.64, 'Kalli', 'Matthisson', 'kmatthisson2@yahoo.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (4, 1844.79, 'Brigg', 'McNeill', 'bmcneill3@issuu.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (5, 2043.41, 'Othilia', 'Islip', 'oislip4@house.gov');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (6, 1413.24, 'Carina', 'Leupoldt', 'cleupoldt5@mediafire.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (7, 1386.02, 'Sol', 'Winspur', 'swinspur6@geocities.jp');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (8, 2896.38, 'Caressa', 'Clair', 'cclair7@google.ca');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (9, 2559.79, 'Wallis', 'Sante', 'wsante8@mashable.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (10, 2133.2, 'Saundra', 'Deport', 'sdeport9@newyorker.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (11, 1437.69, 'Calla', 'Poschel', 'cposchela@yandex.ru');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (12, 2765.86, 'Averell', 'Poxson', 'apoxsonb@gnu.org');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (13, 1295.16, 'Maggie', 'Revill', 'mrevillc@irs.gov');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (14, 2207.62, 'Jsandye', 'Benyan', 'jbenyand@huffingtonpost.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (15, 2227.54, 'Lilly', 'Presser', 'lpressere@linkedin.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (16, 1631.18, 'Velma', 'Sturdy', 'vsturdyf@imdb.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (17, 1697.44, 'Merrel', 'Foran', 'mforang@mashable.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (18, 1472.86, 'Angelle', 'Nuccii', 'anucciih@webs.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (19, 2900.21, 'Maggie', 'Allright', 'mallrighti@surveymonkey.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (20, 2589.45, 'Blaire', 'Elstone', 'belstonej@creativecommons.org');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (21, 2122.06, 'Link', 'Wason', 'lwasonk@examiner.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (22, 2721.89, 'Mahmud', 'Sanders', 'msandersl@dmoz.org');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (23, 1450.41, 'Quintana', 'Mountjoy', 'qmountjoym@indiatimes.com');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (24, 2494.51, 'Ashlie', 'Reaney', 'areaneyn@google.com.hk');
+insert into vendedores (idVendedores, salario, nome, sobrenome, email) values (25, 2527.39, 'Tedie', 'Hartwell', 'thartwello@thetimes.co.uk');
+
+=======
+>>>>>>> Stashed changes
 insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, cpf) values ('5e9b4ff2-60d3-4417-bf86-3cb651ddb572', 'americanexpress', '9/10/2022', '$1665.94', 'volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla', '989c9086-ada5-478b-b023-d274ed30b184', '808-97-2646');
 insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, cpf) values ('63bf0e11-372c-4aa2-8e06-438322ece03d', 'jcb', '7/3/2023', '$1041.56', 'turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet', '81dbae84-3989-41a8-b2c8-48028402aeb2', '745-20-7466');
 insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, cpf) values ('9c9f4610-5d62-4672-8604-421ec53b185f', 'jcb', '11/25/2023', '$1873.27', 'velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit', '06c125d5-ce15-4f74-b66e-4ca911aa8653', '604-21-2241');
@@ -226,3 +284,7 @@ insert into categorias (idcategorias, categoria) values ('f71c98d2-43a9-49f8-bee
 insert into categorias (idcategorias, categoria) values ('b69a7b5d-1bc8-461c-874e-1f020e07b3ac', 'in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis');
 insert into categorias (idcategorias, categoria) values ('a63a2589-ab7a-443e-9d94-ed77a1767ecc', 'sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui');
 insert into categorias (idcategorias, categoria) values ('7abba3af-d902-4b7f-8ac8-3f8cfe1dc5ef', 'semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis');
+<<<<<<< Updated upstream
+=======
+>>>>>>> main
+>>>>>>> Stashed changes
