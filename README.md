@@ -1,6 +1,11 @@
 > **INTRODUÇÃO**
 
-    O banco de dados Get That Auto serve para o armazenamneeto de informações de um sistema de controle de estoque de automáveis. Nele, são armazenados dados sobre o cadastro de vendedroes, de endereços, de clientes, de fornecedores, de produtos e de suas respectivas categorias. Além diso, o banco possui informações para o cadastro de vendas com base nas outras informações nele contidas e, também, armazena os cadastros de vendas na tabela carrinho para um melhor controle das vendas a serem realizadas. Dessa forma, os dados contidos no banco servem para todo o funcionamento do sistema de controle de estoque e venda de automóveis, contendo vendedores, fornecedores, clientes e tudo obre os produtos a venda, facilitando assim o manuseio do sistema para o usuário.
+    O banco de dados Get That Auto serve para o armazenamneeto de informações de um sistema de controle de estoque de automáveis. 
+    Nele, são armazenados dados sobre o cadastro de vendedroes, de endereços, de clientes, de fornecedores, de produtos e de suas 
+    respectivas categorias. Além diso, o banco possui informações para o cadastro de vendas com base nas outras informações nele 
+    contidas e, também, armazena os cadastros de vendas na tabela carrinho para um melhor controle das vendas a serem realizadas. 
+    Dessa forma, os dados contidos no banco servem para todo o funcionamento do sistema de controle de estoque e venda de automóveis, 
+    contendo vendedores, fornecedores, clientes e tudo obre os produtos a venda, facilitando assim o manuseio do sistema para o usuário.
 
 > **DIAGRAMA**
 
