@@ -411,28 +411,13 @@ insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistr
 -- DELETE FROM carrinhos WHERE produtos_idprodutos == valor;
 -- DELETE FROM carrinhos WHERE produtos_idprodutos == valor;
 -- DELETE FROM carrinhos WHERE produtos_idprodutos == valor;
--- DELETE FROM carrinhos WHERE produtos_idprodutos == valor;
--- DELETE FROM carrinhos WHERE produtos_idprodutos == valor;
--- DELETE FROM carrinhos WHERE produtos_idprodutos == valor;
--- DELETE FROM carrinhos WHERE produtos_idprodutos == valor;
--- DELETE FROM carrinhos WHERE produtos_idprodutos == valor;
 
 -- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == valor;
 -- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == valor;
 -- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == valor;
 -- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == valor;
 -- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == valor;
 
--- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == valor;
 -- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == valor;
 -- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == valor;
 -- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == valor;
@@ -452,11 +437,6 @@ insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistr
 -- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 3;
 -- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 4;
 -- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 5;
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 6;
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 7;
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 8;
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 9;
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 10;
 
 -- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 1;
 -- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 2;
@@ -464,11 +444,6 @@ insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistr
 -- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 3;
 -- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 4;
 -- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 5;
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 6;
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 7;
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 8;
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 9;
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 10;
 
 -- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 1;
 -- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 2;
@@ -476,8 +451,4 @@ insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistr
 -- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 3;
 -- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 4;
 -- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 5;
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 6;
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 7;
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 8;
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 9;
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 10;
+
