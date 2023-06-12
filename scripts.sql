@@ -149,6 +149,7 @@ insert into enderecos (cep, id, rua, bairro, cidade, estado) values ('690880', '
 insert into enderecos (cep, id, rua, bairro, cidade, estado) values ('9636', '24', 'Suite 81', '19th Floor', 'Room 1548', 'Room 534');
 insert into enderecos (cep, id, rua, bairro, cidade, estado) values ('4503045', '25', 'PO Box 63343', 'Room 745', '8th Floor', 'Suite 32');
 
+
 insert into categorias (idcategorias, categoria) values ('1', 'felis');
 insert into categorias (idcategorias, categoria) values ('2', 'justo');
 insert into categorias (idcategorias, categoria) values ('3', 'adipiscing');
@@ -323,31 +324,36 @@ insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vend
 
 
 -- inserts emily snow
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (1, 1, 1);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (2, 2, 2);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (3, 3, 3);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (4, 4, 4);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (5, 5, 5);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (6, 6, 6);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (7, 7, 7);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (8, 8, 8);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (9, 9, 9);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (10, 10, 10);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (11, 11, 11);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (12, 12, 12);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (13, 13, 13);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (14, 14, 14);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (15, 15, 15);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (16, 16, 16);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (17, 17, 17);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (18, 18, 18);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (19, 19, 19);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (20, 20, 20);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (21, 21, 21);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (22, 22, 22);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (23, 23, 23);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (24, 24, 24);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (25, 25, 25);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (01, '1', '1');
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (02, 2, 2);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (03, 3, 3);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (04, 4, 4);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (05, 5, 5);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (06, 6, 6);
+
+
+
+-- inserts com erro - corrigir
+
+-- INSERT INTO carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (07, 7, 7);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (08, 8, 8);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (09, 9, 9);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (10, 10, 10);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (11, 11, 11);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (12, 12, 12);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (13, 13, 13);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (14, 14, 14);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (15, 15, 15);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (16, 16, 16);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (17, 17, 17);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (18, 18, 18);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (19, 19, 19);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (20, 20, 20);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (21, 21, 21);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (22, 22, 22);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (23, 23, 23);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (24, 24, 24);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (25, 25, 25);
 
 -- updates emily alves
 -- UPDATE fornecedores SET cnpj = valor1, enderecos_cep = valor2, endereco = valor3, nome = valor4, telefone = valor5 WHERE cnpj == valor;
@@ -373,6 +379,9 @@ insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistr
 -- UPDATE produtos SET idprodutos = valor1, nome = valor2, imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos == valor;
 
 -- updates pat
+
+UPDATE categorias SET idcategorias = 26, categoria = 'compra' WHERE idCategorias = 1;
+
 
 -- updates andri
 
