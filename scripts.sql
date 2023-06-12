@@ -355,6 +355,7 @@ insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistr
 insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (24, 24, 24);
 -- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (25, 25, 25);
 
+
 -- updates emily alves
 -- UPDATE fornecedores SET cnpj = valor1, enderecos_cep = valor2, endereco = valor3, nome = valor4, telefone = valor5 WHERE cnpj == valor;
 -- UPDATE fornecedores SET cnpj = valor1, enderecos_cep = valor2, endereco = valor3, nome = valor4, telefone = valor5 WHERE cnpj == valor;
@@ -379,11 +380,32 @@ insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistr
 -- UPDATE produtos SET idprodutos = valor1, nome = valor2, imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos == valor;
 
 -- updates pat
-
-UPDATE categorias SET idcategorias = 26, categoria = 'compra' WHERE idCategorias = 1;
+-- UPDATE categorias SET idcategorias = 26, categoria = 'compra' WHERE idCategorias = 1;
 
 
 -- updates andri
+-- UPDATE vendedores SET salario= 1,260.89, nome='Garrete', sobrenome= 'Espinosa', email='gespinosa@cisco.com', porcentagemComissao=14.0 WHERE idVendedores== 1;
+-- UPDATE vendedores SET salario= 1,300.90, nome='Joao', sobrenome= 'pedro', email='joaop@cisco.com', porcentagemComissao=15.0 WHERE idVendedores== 2;
+-- UPDATE vendedores SET salario= 1,400.89, nome='pedro', sobrenome= 'neves', email='pedron@cisco.com', porcentagemComissao=16.0 WHERE idVendedores== 3;
+-- UPDATE vendedores SET salario= 1,500.89, nome='Maria', sobrenome= 'clara', email='mariac@cisco.com', porcentagemComissao=17.0 WHERE idVendedores== 4;
+-- UPDATE vendedores SET salario= 1,600.89, nome='ana', sobrenome= 'maria', email='anam@cisco.com', porcentagemComissao=18.0 WHERE idVendedores== 5;
+-- UPDATE vendedores SET salario= 1,700.89, nome='flavia', sobrenome= 'alessandra', email='flaviaa@cisco.com', porcentagemComissao=19.0 WHERE idVendedores== 6;
+-- UPDATE vendedores SET salario= 1,800.89, nome='mateus', sobrenome= 'matias', email='mateusm@cisco.com', porcentagemComissao=20.0 WHERE idVendedores== 7;
+-- UPDATE vendedores SET salario= 1,900.89, nome='luiz', sobrenome= 'gabriel', email='luizg@cisco.com', porcentagemComissao=11.0 WHERE idVendedores== 8;
+-- UPDATE vendedores SET salario= 1,950.89, nome='julia', sobrenome= 'helena', email='juliah@cisco.com', porcentagemComissao=12.0 WHERE idVendedores== 9;
+-- UPDATE vendedores SET salario= 1,100.89, nome='miguel', sobrenome= 'henrique', email='miguelh@cisco.com', porcentagemComissao=13.0 WHERE idVendedores== 10;
+
+-- UPDATE clientes SET nome='marlai', sobrenome='alfavile', email='marlaia@geocities.com', enderecos_id=11 WHERE pessoas_cpf== '222262238';
+-- UPDATE clientes SET nome='joana', sobrenome='emily', email='joanae@geocities.com', enderecos_id=22 WHERE pessoas_cpf== '212213454';
+-- UPDATE clientes SET nome='Jofrey', sobrenome='randerei', email='jofreyr@geocities.com', enderecos_id=33 WHERE pessoas_cpf== '829463144';
+-- UPDATE clientes SET nome='miguela', sobrenome='geters', email='miguelag@geocities.com', enderecos_id=44 WHERE pessoas_cpf== '768541784';
+-- UPDATE clientes SET nome='olivaras', sobrenome='bendito', email='olivarasb@geocities.com', enderecos_id=55 WHERE pessoas_cpf== '103966036';
+-- UPDATE clientes SET nome='harry', sobrenome='potter', email='harryp@geocities.com', enderecos_id=66 WHERE pessoas_cpf== '521474768';
+-- UPDATE clientes SET nome='hermione', sobrenome='granger', email='hermioneg@geocities.com', enderecos_id=77 WHERE pessoas_cpf== '281160955';
+-- UPDATE clientes SET nome='rony', sobrenome='weasley', email='ronyw@geocities.com', enderecos_id=88 WHERE pessoas_cpf== '882776294';
+-- UPDATE clientes SET nome='gina', sobrenome='wesley', email='ginaw@geocities.com', enderecos_id=99 WHERE pessoas_cpf== '747483506';
+-- UPDATE clientes SET nome='alvo', sobrenome='dumbledore', email='alvod@geocities.com', enderecos_id=1010 WHERE pessoas_cpf== '577037388'; ver chave etrangeira de enderecps
+
 
 -- updates emily snow
 -- UPDATE carrinhos SET produtos_idprodutos = valor1, vendaRegistros_idvenda = valor2, vendaRegistros_vendedores_idvendedores = valor3 WHERE produtos_idprodutos == valor;
@@ -413,6 +435,22 @@ UPDATE categorias SET idcategorias = 26, categoria = 'compra' WHERE idCategorias
 -- deletes pat
 
 -- deletes andri
+-- DELETE FROM vendedores WHERE idVendedores ==11;
+-- DELETE FROM vendedores WHERE idVendedores ==12;
+-- DELETE FROM vendedores WHERE idVendedores ==13;
+-- DELETE FROM vendedores WHERE idVendedores ==14;
+-- DELETE FROM vendedores WHERE idVendedores ==15;
+
+-- DELETE FROM clientes WHERE pessoas_cpf == '381724267';
+-- DELETE FROM clientes WHERE pessoas_cpf == '534054225';
+-- DELETE FROM clientes WHERE pessoas_cpf == '154986955';
+-- DELETE FROM clientes WHERE pessoas_cpf == '272816143';
+-- DELETE FROM clientes WHERE pessoas_cpf == '724091791';
+
+
+
+
+
 
 -- deletes emily snow
 -- DELETE FROM carrinhos WHERE produtos_idprodutos == valor;
@@ -438,6 +476,8 @@ UPDATE categorias SET idcategorias = 26, categoria = 'compra' WHERE idCategorias
 -- selects pat
 
 -- selects andri
+
+
 
 -- selects emily snow
 -- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 1;
