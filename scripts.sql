@@ -149,7 +149,6 @@ insert into enderecos (cep, id, rua, bairro, cidade, estado) values ('690880', '
 insert into enderecos (cep, id, rua, bairro, cidade, estado) values ('9636', '24', 'Suite 81', '19th Floor', 'Room 1548', 'Room 534');
 insert into enderecos (cep, id, rua, bairro, cidade, estado) values ('4503045', '25', 'PO Box 63343', 'Room 745', '8th Floor', 'Suite 32');
 
-
 insert into categorias (idcategorias, categoria) values ('1', 'felis');
 insert into categorias (idcategorias, categoria) values ('2', 'justo');
 insert into categorias (idcategorias, categoria) values ('3', 'adipiscing');
@@ -177,7 +176,6 @@ insert into categorias (idcategorias, categoria) values ('24', 'sapien ');
 insert into categorias (idcategorias, categoria) values ('25', 'semper');
 
 -- inserts emily alves -- corrigidos
-
 insert into fornecedores (cnpj,  enderecos_id, nome, telefone) values (82, 1, 'João',  34244624); 
 insert into fornecedores (cnpj,  enderecos_id, nome, telefone) values (83, 2, 'Bruno',  25152528); 
 insert into fornecedores (cnpj,  enderecos_id, nome, telefone) values (84, 3, 'Gustavo',  23178464); 
@@ -187,7 +185,7 @@ insert into fornecedores (cnpj,  enderecos_id, nome, telefone) values (87, 6, 'A
 insert into fornecedores (cnpj,  enderecos_id, nome, telefone) values (88, 7, 'Maria',  35273239); 
 insert into fornecedores (cnpj,  enderecos_id, nome, telefone) values (89, 8, 'Eduarda',  37534664); 
 insert into fornecedores (cnpj,  enderecos_id, nome, telefone) values (90, 9, 'Jonatas',  37663618); 
-insert into fornecedores (cnpj,  enderecos_id, nome, telefone) values (91, 10, '	José',   33533871); 
+insert into fornecedores (cnpj,  enderecos_id, nome, telefone) values (91, 10, 'José',   33533871); 
 insert into fornecedores (cnpj,  enderecos_id, nome, telefone) values (92, 11, 'Elisabeth',   33786431); 
 insert into fornecedores (cnpj,  enderecos_id, nome, telefone) values (93, 12, 'Jonas',  35308887); 
 insert into fornecedores (cnpj,  enderecos_id, nome, telefone) values (94, 13, 'Andiara',  37107347); 
@@ -211,23 +209,18 @@ insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantida
 insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (04, 'Mercury', 'http://dummyimage.com/214x100.png', 30, 63, 5, 'Mountaineer', 72, 5, 86);
 insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (05, 'Chevrolet', 'http://dummyimage.com/119x100.png', 40, 3, 6, 'Malibu', 47, 6, 87);
 insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (06, 'Volkswagen', 'http://dummyimage.com/234x100.png', 74, 1, 7, 'Cabriolet', 62, 7, 88);
-
--- insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (18, 'Mitsubishi', 'http://dummyimage.com/124x100.png', 3, 67, 19, 'Lancer Evolution', 46, 8, 89);
-
-
+insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (18, 'Mitsubishi', 'http://dummyimage.com/124x100.png', 3, 67, 19, 'Lancer Evolution', 46, 8, 89);
 insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (08, 'Mazda', 'http://dummyimage.com/117x100.png', 7, 6, 9, 'B-Series Plus', 93, 9, 90);
 insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (09, 'Infiniti', 'http://dummyimage.com/171x100.png', 72, 7, 10, 'EX', 79, 10, 91);
 insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (10, 'Honda', 'http://dummyimage.com/111x100.png', 16, 41, 11, 'CR-Z', 35, 11, 92);
 insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (11, 'Lincoln', 'http://dummyimage.com/120x100.png', 31, 56, 12, 'Mark VIII', 7, 12, 93);
-
-
 insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (12, 'Buick', 'http://dummyimage.com/110x100.png', 29, 60, 13, 'Riviera', 65, 13, 94);
 insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (13, 'Chevrolet', 'http://dummyimage.com/157x100.png', 96, 56, 14, 'Silverado 1500', 52, 14, 95);
 insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (14, 'Pontiac', 'http://dummyimage.com/225x100.png', 81, 73, 15, 'Montana', 13, 15, 96);
 insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (15, 'Buick', 'http://dummyimage.com/125x100.png', 2, 57, 16, 'LeSabre', 23,16, 97);
 insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (16, 'Lexus', 'http://dummyimage.com/246x100.png', 12, 50, 17, 'GS', 49, 17, 98);
 insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (17, 'Volvo', 'http://dummyimage.com/231x100.png', 22, 15, 18, 'S40', 7, 18, 99);
--- insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (18, 'Mitsubishi', 'http://dummyimage.com/124x100.png', 3, 67, 19, 'Lancer Evolution', 46, 107);
+insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (18, 'Mitsubishi', 'http://dummyimage.com/124x100.png', 3, 67, 19, 'Lancer Evolution', 46, 107);
 insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (19, 'GMC', 'http://dummyimage.com/216x100.png', 74, 65, 20, 'Savana 3500', 21, 20, 100);
 insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (20, 'Dodge', 'http://dummyimage.com/121x100.png', 28, 65, 21, 'Ramcharger', 85, 21, 101);
 insert into produtos (idProdutos, nome, imagemProduto, altura, largura, quantidade, descricao, unidadeEmEstoque, categorias_idcategorias, fornecedores_cnpj) values (21, 'Lexus', 'http://dummyimage.com/187x100.png', 25, 44, 22, 'IS', 44 ,22, 102);
@@ -289,9 +282,6 @@ insert into clientes (pessoas_cpf, nome, sobrenome, email, enderecos_id) values 
 insert into clientes (pessoas_cpf, nome, sobrenome, email, enderecos_id) values ('654270414', 'Nathanael', 'Enocksson', 'nenockssono@microsoft.com', 25);
 
 
-
-
-
 -- inserts pat 
 insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('1', 'debito', '2022-10-09', '1665.94', 'volutpat ', 1, 222262238 );
 insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('2', 'credito', '2023-3-07', '1041.56', 'turpis ', 2, 212213454 );
@@ -320,68 +310,93 @@ insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vend
 insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('25', 'credito', '2023-6-12', '1475.45', 'est',25,654270414 );
 
 
-
-
-
 -- inserts emily snow
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (01, '1', '1');
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (02, 2, 2);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (03, 3, 3);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (04, 4, 4);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (05, 5, 5);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (06, 6, 6);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (1, 1, 1);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (2, 2, 2);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (3, 3, 3);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (4, 4, 4);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (5, 5, 5);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (6, 6, 6);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (7, 7, 7);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (8, 8, 8);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (9, 9, 9);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (10, 10, 10);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (11, 11, 11);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (12, 12, 12);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (13, 13, 13);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (14, 14, 14);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (15, 15, 15);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (16, 16, 16);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (17, 17, 17);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (18, 18, 18);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (19, 19, 19);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (20, 20, 20);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (21, 21, 21);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (22, 22, 22);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (23, 23, 23);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (24, 24, 24);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (25, 25, 25);
 
 
+-- selects emily alves
+SELECT COUNT(*) FROM (produtos);
+SELECT * FROM (produtos) ORDER BY (idProdutos);
 
--- inserts com erro - corrigir
+SELECT COUNT(*) FROM (fornecedores);
+SELECT * FROM (fornecedores) ORDER BY (cnpj);
 
--- INSERT INTO carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (07, 7, 7);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (08, 8, 8);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (09, 9, 9);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (10, 10, 10);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (11, 11, 11);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (12, 12, 12);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (13, 13, 13);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (14, 14, 14);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (15, 15, 15);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (16, 16, 16);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (17, 17, 17);
--- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (18, 18, 18);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (19, 19, 19);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (20, 20, 20);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (21, 21, 21);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (22, 22, 22);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (23, 23, 23);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (24, 24, 24);
--- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (25, 25, 25);
+-- selects pat
+
+-- selects andri
+
+-- selects emily snow
+-- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 1;
+-- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 2;
+-- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 3;
+-- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 3;
+-- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 4;
+-- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 5;
+
+-- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 1;
+-- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 2;
+-- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 3;
+-- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 3;
+-- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 4;
+-- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 5;
+
+-- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 1;
+-- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 2;
+-- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 3;
+-- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 3;
+-- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 4;
+-- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 5;
 
 
 -- updates emily alves
--- UPDATE fornecedores SET cnpj = valor1, enderecos_cep = valor2, endereco = valor3, nome = valor4, telefone = valor5 WHERE cnpj == valor;
--- UPDATE fornecedores SET cnpj = valor1, enderecos_cep = valor2, endereco = valor3, nome = valor4, telefone = valor5 WHERE cnpj == valor;
--- UPDATE fornecedores SET cnpj = valor1, enderecos_cep = valor2, endereco = valor3, nome = valor4, telefone = valor5 WHERE cnpj == valor;
--- UPDATE fornecedores SET cnpj = valor1, enderecos_cep = valor2, endereco = valor3, nome = valor4, telefone = valor5 WHERE cnpj == valor;
--- UPDATE fornecedores SET cnpj = valor1, enderecos_cep = valor2, endereco = valor3, nome = valor4, telefone = valor5 WHERE cnpj == valor;
--- UPDATE fornecedores SET cnpj = valor1, enderecos_cep = valor2, endereco = valor3, nome = valor4, telefone = valor5 WHERE cnpj == valor;
--- UPDATE fornecedores SET cnpj = valor1, enderecos_cep = valor2, endereco = valor3, nome = valor4, telefone = valor5 WHERE cnpj == valor;
--- UPDATE fornecedores SET cnpj = valor1, enderecos_cep = valor2, endereco = valor3, nome = valor4, telefone = valor5 WHERE cnpj == valor;
--- UPDATE fornecedores SET cnpj = valor1, enderecos_cep = valor2, endereco = valor3, nome = valor4, telefone = valor5 WHERE cnpj == valor;
--- UPDATE fornecedores SET cnpj = valor1, enderecos_cep = valor2, endereco = valor3, nome = valor4, telefone = valor5 WHERE cnpj == valor;
+UPDATE fornecedores SET cnpj = 01, enderecos_id = 26, nome = 'Marcos', telefone = 92178827 WHERE cnpj LIKE 82;
+UPDATE fornecedores SET cnpj = 02, enderecos_id = 27, nome = 'Ana', telefone = 92117973 WHERE cnpj LIKE 83;
+UPDATE fornecedores SET cnpj = 03, enderecos_id = 28, nome = 'Renata', telefone = 91853907 WHERE cnpj LIKE 84;
+UPDATE fornecedores SET cnpj = 04, enderecos_id = 29, nome = 'Lana', telefone = 32241802 WHERE cnpj LIKE 85;
+UPDATE fornecedores SET cnpj = 05, enderecos_id = 30, nome = 'Taylor', telefone = 84241802 WHERE cnpj LIKE 86;
+UPDATE fornecedores SET cnpj = 06, enderecos_id = 31, nome = 'Henrique', telefone = 98236745 WHERE cnpj LIKE 87;
+UPDATE fornecedores SET cnpj = 07, enderecos_id = 32, nome = 'Gustavo', telefone = 98712365 WHERE cnpj LIKE 88;
+UPDATE fornecedores SET cnpj = 08, enderecos_id = 33, nome = 'Murilo', telefone = 91223045 WHERE cnpj LIKE 89;
+UPDATE fornecedores SET cnpj = 09, enderecos_id = 34, nome = 'Rafael', telefone = 92345568 WHERE cnpj LIKE 90;
+UPDATE fornecedores SET cnpj = 10, enderecos_id = 35, nome = 'Vitor', telefone = 91220348 WHERE cnpj LIKE 91;
 
--- UPDATE produtos SET idprodutos = valor1, nome = valor2, imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos == valor;
--- UPDATE produtos SET idprodutos = valor1, nome = valor2, imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos == valor;
--- UPDATE produtos SET idprodutos = valor1, nome = valor2, imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos == valor;
--- UPDATE produtos SET idprodutos = valor1, nome = valor2, imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos == valor;
--- UPDATE produtos SET idprodutos = valor1, nome = valor2, imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos == valor;
--- UPDATE produtos SET idprodutos = valor1, nome = valor2, imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos == valor;
--- UPDATE produtos SET idprodutos = valor1, nome = valor2, imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos == valor;
--- UPDATE produtos SET idprodutos = valor1, nome = valor2, imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos == valor;
--- UPDATE produtos SET idprodutos = valor1, nome = valor2, imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos == valor;
--- UPDATE produtos SET idprodutos = valor1, nome = valor2, imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos == valor;
+UPDATE produtos SET idprodutos = 25, nome = 'Pálio', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 00;
+UPDATE produtos SET idprodutos = 26, nome = 'Corola', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 01;
+UPDATE produtos SET idprodutos = 27, nome = 'Monza', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 02;
+UPDATE produtos SET idprodutos = 28, nome = 'Fusca', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 03;
+UPDATE produtos SET idprodutos = 29, nome = 'Brasília', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 04;
+UPDATE produtos SET idprodutos = 30, nome = 'Gol Bolinha', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 05;
+UPDATE produtos SET idprodutos = 31, nome = 'Gol Quadrado', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 06;
+UPDATE produtos SET idprodutos = 32, nome = 'Ferrari', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 07;
+UPDATE produtos SET idprodutos = 33, nome = '', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 08;
+UPDATE produtos SET idprodutos = 34, nome = '', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 09;
 
 -- updates pat
 -- UPDATE categorias SET idcategorias = 26, categoria = 'compra' WHERE idCategorias = 1;
-
 
 -- updates andri
 -- UPDATE vendedores SET salario= 1,260.89, nome='Garrete', sobrenome= 'Espinosa', email='gespinosa@cisco.com', porcentagemComissao=14.0 WHERE idVendedores== 1;
@@ -418,6 +433,7 @@ insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistr
 -- UPDATE carrinhos SET produtos_idprodutos = valor1, vendaRegistros_idvenda = valor2, vendaRegistros_vendedores_idvendedores = valor3 WHERE produtos_idprodutos == valor;
 -- UPDATE carrinhos SET produtos_idprodutos = valor1, vendaRegistros_idvenda = valor2, vendaRegistros_vendedores_idvendedores = valor3 WHERE produtos_idprodutos == valor;
 -- UPDATE carrinhos SET produtos_idprodutos = valor1, vendaRegistros_idvenda = valor2, vendaRegistros_vendedores_idvendedores = valor3 WHERE produtos_idprodutos == valor;
+
 
 -- deletes emily alves
 -- DELETE FROM fornecedores WHERE cnpj == valor;
@@ -471,33 +487,5 @@ insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistr
 -- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == valor;
 -- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == valor;
 
--- selects emily alves
 
--- selects pat
-
--- selects andri
-
-
-
--- selects emily snow
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 1;
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 2;
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 3;
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 3;
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 4;
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 5;
-
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 1;
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 2;
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 3;
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 3;
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 4;
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 5;
-
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 1;
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 2;
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 3;
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 3;
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 4;
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 5;
 
