@@ -311,31 +311,31 @@ insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vend
 
 
 -- inserts emily snow
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (1, 1, 1);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (2, 2, 2);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (3, 3, 3);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (4, 4, 4);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (5, 5, 5);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (6, 6, 6);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (7, 7, 7);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (8, 8, 8);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (9, 9, 9);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (10, 10, 10);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (11, 11, 11);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (12, 12, 12);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (13, 13, 13);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (14, 14, 14);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (15, 15, 15);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (16, 16, 16);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (17, 17, 17);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (18, 18, 18);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (19, 19, 19);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (20, 20, 20);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (21, 21, 21);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (22, 22, 22);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (23, 23, 23);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (24, 24, 24);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedres) values (25, 25, 25);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (00, 1, 1);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (01, 2, 2);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (02, 3, 3);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (03, 4, 4);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (04, 5, 5);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (05, 6, 6);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (06, 7, 7);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (18, 8, 8);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (08, 9, 9);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (09, 10, 10);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (10, 11, 11);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (11, 12, 12);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (12, 13, 13);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (13, 14, 14);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (14, 15, 15);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (15, 16, 16);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (16, 17, 17);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (17, 18, 18);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (18, 19, 19);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (19, 20, 20);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (20, 21, 21);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (21, 22, 22);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (22, 23, 23);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (23, 24, 24);
+insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (24, 25, 25);
 
 
 -- selects emily alves
@@ -423,16 +423,17 @@ UPDATE produtos SET idprodutos = 34, nome = 'BMW', imagemProduto = '', altura = 
 
 
 -- updates emily snow
--- UPDATE carrinhos SET produtos_idprodutos = valor1, vendaRegistros_idvenda = valor2, vendaRegistros_vendedores_idvendedores = valor3 WHERE produtos_idprodutos == valor;
--- UPDATE carrinhos SET produtos_idprodutos = valor1, vendaRegistros_idvenda = valor2, vendaRegistros_vendedores_idvendedores = valor3 WHERE produtos_idprodutos == valor;
--- UPDATE carrinhos SET produtos_idprodutos = valor1, vendaRegistros_idvenda = valor2, vendaRegistros_vendedores_idvendedores = valor3 WHERE produtos_idprodutos == valor;
--- UPDATE carrinhos SET produtos_idprodutos = valor1, vendaRegistros_idvenda = valor2, vendaRegistros_vendedores_idvendedores = valor3 WHERE produtos_idprodutos == valor;
--- UPDATE carrinhos SET produtos_idprodutos = valor1, vendaRegistros_idvenda = valor2, vendaRegistros_vendedores_idvendedores = valor3 WHERE produtos_idprodutos == valor;
--- UPDATE carrinhos SET produtos_idprodutos = valor1, vendaRegistros_idvenda = valor2, vendaRegistros_vendedores_idvendedores = valor3 WHERE produtos_idprodutos == valor;
--- UPDATE carrinhos SET produtos_idprodutos = valor1, vendaRegistros_idvenda = valor2, vendaRegistros_vendedores_idvendedores = valor3 WHERE produtos_idprodutos == valor;
--- UPDATE carrinhos SET produtos_idprodutos = valor1, vendaRegistros_idvenda = valor2, vendaRegistros_vendedores_idvendedores = valor3 WHERE produtos_idprodutos == valor;
--- UPDATE carrinhos SET produtos_idprodutos = valor1, vendaRegistros_idvenda = valor2, vendaRegistros_vendedores_idvendedores = valor3 WHERE produtos_idprodutos == valor;
--- UPDATE carrinhos SET produtos_idprodutos = valor1, vendaRegistros_idvenda = valor2, vendaRegistros_vendedores_idvendedores = valor3 WHERE produtos_idprodutos == valor;
+-- UPDATE carrinhos SET produtos_idprodutos = 101, vendaRegistros_idvenda = 101, vendaRegistros_vendedores_idvendedores = 101 WHERE produtos_idprodutos == 00;
+-- UPDATE carrinhos SET produtos_idprodutos = 102, vendaRegistros_idvenda = 102, vendaRegistros_vendedores_idvendedores = 102 WHERE produtos_idprodutos == 01;
+-- UPDATE carrinhos SET produtos_idprodutos = 103, vendaRegistros_idvenda = 103, vendaRegistros_vendedores_idvendedores = 103 WHERE produtos_idprodutos == 02;
+-- UPDATE carrinhos SET produtos_idprodutos = 104, vendaRegistros_idvenda = 104, vendaRegistros_vendedores_idvendedores = 104 WHERE produtos_idprodutos == 03;
+-- UPDATE carrinhos SET produtos_idprodutos = 105, vendaRegistros_idvenda = 105, vendaRegistros_vendedores_idvendedores = 105 WHERE produtos_idprodutos == 04;
+-- UPDATE carrinhos SET produtos_idprodutos = 106, vendaRegistros_idvenda = 106, vendaRegistros_vendedores_idvendedores = 106 WHERE produtos_idprodutos == 05;
+-- UPDATE carrinhos SET produtos_idprodutos = 107, vendaRegistros_idvenda = 107, vendaRegistros_vendedores_idvendedores = 107 WHERE produtos_idprodutos == 06;
+-- UPDATE carrinhos SET produtos_idprodutos = 108, vendaRegistros_idvenda = 108, vendaRegistros_vendedores_idvendedores = 108 WHERE produtos_idprodutos == 18;
+-- UPDATE carrinhos SET produtos_idprodutos = 109, vendaRegistros_idvenda = 109, vendaRegistros_vendedores_idvendedores = 109 WHERE produtos_idprodutos == 08;
+-- UPDATE carrinhos SET produtos_idprodutos = 110, vendaRegistros_idvenda = 110, vendaRegistros_vendedores_idvendedores = 110 WHERE produtos_idprodutos == 09;
+
 
 
 -- deletes emily alves
@@ -465,27 +466,19 @@ DELETE FROM produtos WHERE idprodutos LIKE 24;
 
 
 
-
-
-
 -- deletes emily snow
--- DELETE FROM carrinhos WHERE produtos_idprodutos == valor;
--- DELETE FROM carrinhos WHERE produtos_idprodutos == valor;
--- DELETE FROM carrinhos WHERE produtos_idprodutos == valor;
--- DELETE FROM carrinhos WHERE produtos_idprodutos == valor;
--- DELETE FROM carrinhos WHERE produtos_idprodutos == valor;
+-- DELETE FROM carrinhos WHERE produtos_idprodutos == 101;
+-- DELETE FROM carrinhos WHERE produtos_idprodutos == 102;
+-- DELETE FROM carrinhos WHERE produtos_idprodutos == 103;
 
--- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == valor;
+-- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == 104;
+-- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == 105;
+-- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == 107;
+-- DELETE FROM carrinhos WHERE vendaRegistros_idvenda == 108;
 
--- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == valor;
--- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == valor;
+-- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == 104;
+-- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores == 102;
+
 
 
 
