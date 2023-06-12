@@ -339,11 +339,11 @@ insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistr
 
 
 -- selects emily alves
-SELECT COUNT(*) FROM (produtos);
-SELECT * FROM (produtos) ORDER BY (idProdutos);
+SELECT COUNT(*) FROM produtos;
+SELECT * FROM produtos ORDER BY idProdutos;
 
-SELECT COUNT(*) FROM (fornecedores);
-SELECT * FROM (fornecedores) ORDER BY (cnpj);
+SELECT COUNT(*) FROM fornecedores;
+SELECT * FROM fornecedores ORDER BY cnpj;
 
 -- selects pat
 
@@ -384,16 +384,16 @@ UPDATE fornecedores SET cnpj = 08, enderecos_id = 33, nome = 'Murilo', telefone 
 UPDATE fornecedores SET cnpj = 09, enderecos_id = 34, nome = 'Rafael', telefone = 92345568 WHERE cnpj LIKE 90;
 UPDATE fornecedores SET cnpj = 10, enderecos_id = 35, nome = 'Vitor', telefone = 91220348 WHERE cnpj LIKE 91;
 
-UPDATE produtos SET idprodutos = 25, nome = 'Pálio', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 00;
-UPDATE produtos SET idprodutos = 26, nome = 'Corola', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 01;
-UPDATE produtos SET idprodutos = 27, nome = 'Monza', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 02;
-UPDATE produtos SET idprodutos = 28, nome = 'Fusca', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 03;
-UPDATE produtos SET idprodutos = 29, nome = 'Brasília', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 04;
-UPDATE produtos SET idprodutos = 30, nome = 'Gol Bolinha', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 05;
-UPDATE produtos SET idprodutos = 31, nome = 'Gol Quadrado', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 06;
-UPDATE produtos SET idprodutos = 32, nome = 'Ferrari', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 07;
-UPDATE produtos SET idprodutos = 33, nome = '', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 08;
-UPDATE produtos SET idprodutos = 34, nome = '', imagemProduto = valor3, altura = valor4, largura = valor5, quantidade = valor6, descricao = valor7, unidadeEmEstoque = valor8, categorias_idcategorias = valor9, fornecedores_cnpj = valor10 WHERE idprodutos LIKE 09;
+UPDATE produtos SET idprodutos = 25, nome = 'Pálio', imagemProduto = '', altura = 9, largura = 17, quantidade = 2, descricao = 'Pálio Cinza', unidadeEmEstoque = 67, categorias_idcategorias = 1, fornecedores_cnpj = 01 WHERE idprodutos LIKE 00;
+UPDATE produtos SET idprodutos = 26, nome = 'Corola', imagemProduto = '', altura = 23, largura = 24, quantidade = 4, descricao = 'Corola 2021 Preto', unidadeEmEstoque = 56, categorias_idcategorias = 2, fornecedores_cnpj = 02 WHERE idprodutos LIKE 01;
+UPDATE produtos SET idprodutos = 27, nome = 'Monza', imagemProduto = '', altura = 13, largura = 53, quantidade = 3, descricao = 'Mitubish', unidadeEmEstoque = 97, categorias_idcategorias = 3, fornecedores_cnpj = 03 WHERE idprodutos LIKE 02;
+UPDATE produtos SET idprodutos = 28, nome = 'Fusca', imagemProduto = '', altura = 22, largura = 23, quantidade = 2, descricao = 'Fusca Azul', unidadeEmEstoque = 66, categorias_idcategorias = 4, fornecedores_cnpj = 04 WHERE idprodutos LIKE 03;
+UPDATE produtos SET idprodutos = 29, nome = 'Brasília', imagemProduto = '', altura = 12, largura = 13, quantidade = 6, descricao = 'Brasília Amarela', unidadeEmEstoque = 88, categorias_idcategorias = 5, fornecedores_cnpj = 05 WHERE idprodutos LIKE 04;
+UPDATE produtos SET idprodutos = 30, nome = 'Parati', imagemProduto = '', altura = 21, largura = 22, quantidade = 4, descricao = 'Parati Quadrada', unidadeEmEstoque = 55, categorias_idcategorias = 6, fornecedores_cnpj = 06 WHERE idprodutos LIKE 05;
+UPDATE produtos SET idprodutos = 31, nome = 'Gol', imagemProduto = '', altura = 4, largura = 33, quantidade = 1, descricao = 'Gol Quadrado', unidadeEmEstoque = 98, categorias_idcategorias = 7, fornecedores_cnpj = 07 WHERE idprodutos LIKE 06;
+UPDATE produtos SET idprodutos = 32, nome = 'Ferrari', imagemProduto = '', altura = 12, largura = 24, quantidade = 2, descricao = 'Ferrari Vermelha 2022', unidadeEmEstoque = 55, categorias_idcategorias = 8, fornecedores_cnpj = 08 WHERE idprodutos LIKE 07;
+UPDATE produtos SET idprodutos = 33, nome = 'Lamborguini', imagemProduto = '', altura = 15, largura = 35, quantidade = 3, descricao = 'Lamborguini Azul 2023', unidadeEmEstoque = 67, categorias_idcategorias = 9, fornecedores_cnpj = 09 WHERE idprodutos LIKE 08;
+UPDATE produtos SET idprodutos = 34, nome = 'BMW', imagemProduto = '', altura = 12, largura = 22, quantidade = 4, descricao = 'BMW Conversível', unidadeEmEstoque = 96, categorias_idcategorias = 10, fornecedores_cnpj = 10 WHERE idprodutos LIKE 09;
 
 -- updates pat
 -- UPDATE categorias SET idcategorias = 26, categoria = 'compra' WHERE idCategorias = 1;
@@ -436,17 +436,17 @@ UPDATE produtos SET idprodutos = 34, nome = '', imagemProduto = valor3, altura =
 
 
 -- deletes emily alves
--- DELETE FROM fornecedores WHERE cnpj == valor;
--- DELETE FROM fornecedores WHERE cnpj == valor;
--- DELETE FROM fornecedores WHERE cnpj == valor;
--- DELETE FROM fornecedores WHERE cnpj == valor;
--- DELETE FROM fornecedores WHERE cnpj == valor;
+DELETE FROM fornecedores WHERE cnpj LIKE 101;
+DELETE FROM fornecedores WHERE cnpj LIKE 102;
+DELETE FROM fornecedores WHERE cnpj LIKE 103;
+DELETE FROM fornecedores WHERE cnpj LIKE 104;
+DELETE FROM fornecedores WHERE cnpj LIKE 105;
 
--- DELETE FROM produtos WHERE idprodutos == valor;
--- DELETE FROM produtos WHERE idprodutos == valor;
--- DELETE FROM produtos WHERE idprodutos == valor;
--- DELETE FROM produtos WHERE idprodutos == valor;
--- DELETE FROM produtos WHERE idprodutos == valor;
+DELETE FROM produtos WHERE idprodutos LIKE 20;
+DELETE FROM produtos WHERE idprodutos LIKE 21;
+DELETE FROM produtos WHERE idprodutos LIKE 22;
+DELETE FROM produtos WHERE idprodutos LIKE 23;
+DELETE FROM produtos WHERE idprodutos LIKE 24;
 
 -- deletes pat
 
