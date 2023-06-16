@@ -394,10 +394,6 @@ CREATE TABLE IF NOT EXISTS `carrinhos` (
 -- UPDATE enderecos SET cep= '99999', rua='ruaDez', bairro='BelaDez', cidade='GasparDez', estado='SC' WHERE id == 10;
 
 
-
-
-
-
 -- updates andri
 -- UPDATE vendedores SET salario= 1,260.89, nome='Garrete', sobrenome= 'Espinosa', email='gespinosa@cisco.com', porcentagemComissao=14.0 WHERE idVendedores== 1;
 -- UPDATE vendedores SET salario= 1,300.90, nome='Joao', sobrenome= 'pedro', email='joaop@cisco.com', porcentagemComissao=15.0 WHERE idVendedores== 2;
@@ -448,6 +444,17 @@ CREATE TABLE IF NOT EXISTS `carrinhos` (
 -- DELETE FROM produtos WHERE idprodutos LIKE 24;
 
 -- deletes pat
+-- DELETE FROM categorias WHERE idCategoria ==1;
+-- DELETE FROM categorias WHERE idCategoria ==2;
+-- DELETE FROM categorias WHERE idCategoria ==3;
+-- DELETE FROM categorias WHERE idCategoria ==4;
+-- DELETE FROM categorias WHERE idCategoria ==5;
+
+-- DELETE FROM enderecos WHERE id == 1;
+-- DELETE FROM enderecos WHERE id == 2;
+-- DELETE FROM enderecos WHERE id == 3;
+-- DELETE FROM enderecos WHERE id == 4;
+-- DELETE FROM enderecos WHERE id == 5;
 
 -- deletes andri
 -- DELETE FROM vendedores WHERE idVendedores ==11;
