@@ -371,7 +371,32 @@ CREATE TABLE IF NOT EXISTS `carrinhos` (
 -- UPDATE produtos SET idprodutos = 34, nome = 'BMW', imagemProduto = '', altura = 12, largura = 22, quantidade = 4, descricao = 'BMW Conversível', unidadeEmEstoque = 96, categorias_idcategorias = 10, fornecedores_cnpj = 10 WHERE idprodutos LIKE 09;
 
 -- updates pat
--- UPDATE categorias SET idcategorias = 26, categoria = 'compra' WHERE idCategorias = 1;
+-- UPDATE categorias SET categoria = 'compraZero' WHERE idCategorias == 1;
+-- UPDATE categorias SET categoria = 'compraUm' WHERE idCategorias == 2;
+-- UPDATE categorias SET categoria = 'compraDois' WHERE idCategorias == 3;
+-- UPDATE categorias SET categoria = 'compraTres' WHERE idCategorias == 4;
+-- UPDATE categorias SET categoria = 'compraQuatro' WHERE idCategorias == 5;
+-- UPDATE categorias SET categoria = 'compraCinco' WHERE idCategorias == 6;
+-- UPDATE categorias SET categoria = 'compraSeis' WHERE idCategorias == 7;
+-- UPDATE categorias SET categoria = 'compraSete' WHERE idCategorias == 8;
+-- UPDATE categorias SET categoria = 'compraOito' WHERE idCategorias == 9;
+-- UPDATE categorias SET categoria = 'compraOito' WHERE idCategorias == 10;
+
+-- UPDATE enderecos SET cep= '00000', rua='ruaUm', bairro='BelaUm', cidade='GasparUm', estado='SC' WHERE id == 1;
+-- UPDATE enderecos SET cep= '11111', rua='ruaDois', bairro='BelaDois', cidade='GasparDois', estado='SC' WHERE id == 2;
+-- UPDATE enderecos SET cep= '22222', rua='ruaTres', bairro='BelaTres', cidade='GasparTres', estado='SC' WHERE id == 3;
+-- UPDATE enderecos SET cep= '33333', rua='ruaQuatro', bairro='BelaQuatro', cidade='GasparQuatro', estado='SC' WHERE id == 4;
+-- UPDATE enderecos SET cep= '44444', rua='ruaCinco', bairro='BelaCinco', cidade='GasparCinco', estado='SC' WHERE id == 5;
+-- UPDATE enderecos SET cep= '55555', rua='ruaSeis', bairro='BelaSeis', cidade='GasparSeis', estado='SC' WHERE id == 6;
+-- UPDATE enderecos SET cep= '66666', rua='ruaSete', bairro='BelaSete', cidade='GasparSete', estado='SC' WHERE id == 7;
+-- UPDATE enderecos SET cep= '77777', rua='ruaOito', bairro='BelaOito', cidade='GasparOito', estado='SC' WHERE id == 8;
+-- UPDATE enderecos SET cep= '88888', rua='ruaNove', bairro='BelaNove', cidade='GasparNove', estado='SC' WHERE id == 9;
+-- UPDATE enderecos SET cep= '99999', rua='ruaDez', bairro='BelaDez', cidade='GasparDez', estado='SC' WHERE id == 10;
+
+
+
+
+
 
 -- updates andri
 -- UPDATE vendedores SET salario= 1,260.89, nome='Garrete', sobrenome= 'Espinosa', email='gespinosa@cisco.com', porcentagemComissao=14.0 WHERE idVendedores== 1;
