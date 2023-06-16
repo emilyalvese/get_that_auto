@@ -325,7 +325,19 @@ CREATE TABLE IF NOT EXISTS `carrinhos` (
 
 -- selects pat
 
+-- SELECT COUNT (*) FROM categorias;
+-- SELECT * FROM categorias ORDER BY idCategorias;
+
+-- SELECT COUNT (*) FROM enderecos;
+-- SELECT * FROM enderecos ORDER BY id;
+
+
 -- selects andri
+-- SELECT COUNT (*) FROM vendedores;
+-- SELECT * FROM vendedores ORDER BY idVendedores;
+
+-- SELECT COUNT (*) FROM clientes;
+-- SELECT * FROM clientes ORDER BY pessoas_cpf;
 
 -- selects emily snow
 -- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 1;
