@@ -315,6 +315,32 @@ CREATE TABLE IF NOT EXISTS `carrinhos` (
 -- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (23, 24, 24);
 -- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (24, 25, 25);
 
+-- inserts emily snow
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (01, 1, 1);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (02, 2, 2);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (03, 3, 3);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (04, 4, 4);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (05, 5, 5);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (06, 6, 6);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (07, 7, 7);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (08, 8, 8);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (09, 9, 9);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (10, 10, 10);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (11, 11, 11);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (12, 12, 12);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (13, 13, 13);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (14, 14, 14);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (15, 15, 15);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (16, 16, 16);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (17, 17, 17);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (18, 18, 18);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (19, 19, 19);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (20, 20, 20);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (21, 21, 21);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (22, 22, 22);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (23, 23, 23);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (24, 24, 24);
+-- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (25, 25, 25);
 
 -- selects emily alves
 -- SELECT COUNT(*) FROM produtos;
@@ -340,52 +366,8 @@ CREATE TABLE IF NOT EXISTS `carrinhos` (
 -- SELECT * FROM clientes ORDER BY pessoas_cpf;
 
 -- selects emily snow
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 1;
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 2;
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 3;
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 3;
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 4;
--- SELECT produtos_idprodutos FROM carrinhos WHERE produtos_idprodutos = 5;
-
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 1;
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 2;
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 3;
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 3;
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 4;
--- SELECT vendaRegistros_idvenda FROM carrinhos WHERE vendaRegistros_idvenda = 5;
-
--- inserts emily snow
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (01, 1, 1);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (02, 2, 2);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (03, 3, 3);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (04, 4, 4);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (05, 5, 5);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (06, 6, 6);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (07, 7, 7);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (08, 8, 8);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (09, 9, 9);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (10, 10, 10);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (11, 11, 11);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (12, 12, 12);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (13, 13, 13);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (14, 14, 14);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (15, 15, 15);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (16, 16, 16);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (17, 17, 17);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (18, 18, 18);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (19, 19, 19);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (20, 20, 20);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (21, 21, 21);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (22, 22, 22);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (23, 23, 23);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (24, 24, 24);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (25, 25, 25);
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 1;
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 2;
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 3;
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 3;
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 4;
--- SELECT vendaRegistros_vendedores_idvendedores FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 5;
+-- SELECT COUNT (*) FROM carrinhos;
+-- SELECT * FROM carrinhos ORDER BY produtos_idprodutos;
 
 
 -- updates emily alves
