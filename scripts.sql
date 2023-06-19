@@ -259,6 +259,8 @@ insert into vendedores (idVendedores, salario, nome, sobrenome, email, porcentag
  insert into vendedores (idVendedores, salario, nome, sobrenome, email, porcentagemComissao) values (23, 1450.41, 'Quintana', 'Mountjoy', 'qmountjoym@indiatimes.com', 2.34);
  insert into vendedores (idVendedores, salario, nome, sobrenome, email, porcentagemComissao) values (24, 2494.51, 'Ashlie', 'Reaney', 'areaneyn@google.com.hk', 5.7);
  insert into vendedores (idVendedores, salario, nome, sobrenome, email, porcentagemComissao) values (25, 2527.39, 'Tedie', 'Hartwell', 'thartwello@thetimes.co.uk', 9.10);
+ insert into vendedores (idVendedores, salario, nome, sobrenome, email, porcentagemComissao) values (10, 2527.40, 'Tedie', 'Hartwell', 'thartwello@thetimes.co.uk', 9.10);
+
 
  insert into clientes (pessoas_cpf, nome, sobrenome, email, enderecos_id) values ('212213454', 'Joanna', 'oldey', 'joldey1@baidu.com', 2);
  insert into clientes (pessoas_cpf, nome, sobrenome, email, enderecos_id) values ('768541784', 'Miguela', 'Gettens', 'mgettens3@imdb.com', 4);
@@ -296,7 +298,7 @@ insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vend
  insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('8', 'credito', '2023-3-18', '1008.27', 'convallis',8,882776294 );
  insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('9', 'debito', '2023-1-24', '1275.99', 'vivamus', 9,747483506 );
  
- -- insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('10', 'dinheiro', '2023-2-7', '938.88', 'nibh', 10,577037388 );
+insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('10', 'dinheiro', '2023-2-7', '938.88', 'nibh', 10,577037388 );
  
  insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('11', 'dinheiro', '2023-3-5', '1845.88', 'faucibus', 11, 133181424);
  insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('12', 'credito', '2023-9-3', '584.73', 'enim', 12,431436733 );
@@ -486,17 +488,24 @@ DELETE FROM produtos WHERE idprodutos = 105;
 DELETE FROM produtos WHERE fornecedores_cnpj = (SELECT cnpj FROM fornecedores WHERE enderecos_id = 26);
 DELETE FROM fornecedores WHERE enderecos_id = 26;
 
- -- DELETE FROM enderecos WHERE id = 2;
- -- DELETE FROM enderecos WHERE id = 3;
- -- DELETE FROM enderecos WHERE id = 4;
- -- DELETE FROM enderecos WHERE id = 5;
+
+DELETE FROM vendaregistros WHERE clientes_pessoas_cpf = (SELECT pessoas_cpf FROM clientes WHERE enderecos_id = 2);
+DELETE FROM clientes WHERE enderecos_id = 2;
+
+DELETE FROM vendaregistros WHERE clientes_pessoas_cpf = (SELECT pessoas_cpf FROM clientes WHERE enderecos_id = 3);
+DELETE FROM clientes WHERE enderecos_id = 3;
+
+
 
 -- deletes andri
- -- DELETE FROM vendedores WHERE idVendedores =11;
- -- DELETE FROM vendedores WHERE idVendedores =12;
- -- DELETE FROM vendedores WHERE idVendedores =13;
- -- DELETE FROM vendedores WHERE idVendedores =14;
- -- DELETE FROM vendedores WHERE idVendedores =15;
+DELETE FROM vendaregistros WHERE vendedores_idvendedores = 11;
+DELETE FROM vendedores WHERE idVendedores = 11;
+
+DELETE FROM vendaregistros WHERE vendedores_idvendedores = 13;
+DELETE FROM vendedores WHERE idVendedores = 13;
+
+ DELETE FROM vendaregistros WHERE vendedores_idvendedores = 15;
+DELETE FROM vendedores WHERE idVendedores = 15;
 
 
 -- deletes emily snow
