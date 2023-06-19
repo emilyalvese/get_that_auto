@@ -391,15 +391,15 @@ UPDATE enderecos SET cep= '8888888', id='9', rua='aaaa', bairro='aaaaa', cidade=
 UPDATE enderecos SET cep= '99999', id='10', rua='aaaa', bairro='aaaaa', cidade='aaaa', estado='aaa' WHERE id = 35;
 
 -- updates emily alves
- UPDATE fornecedores SET cnpj = 01, enderecos_id = 26, nome = 'Marcos', telefone = 92178827 WHERE enderecos_id = 82;
- UPDATE fornecedores SET cnpj = 02, enderecos_id = 27, nome = 'Ana', telefone = 92117973 WHERE enderecos_id =83;
- UPDATE fornecedores SET cnpj = 03, enderecos_id = 28, nome = 'Renata', telefone = 91853907 WHERE enderecos_id = 84;
- UPDATE fornecedores SET cnpj = 04, enderecos_id = 29, nome = 'Lana', telefone = 32241802 WHERE enderecos_id = 85;
- UPDATE fornecedores SET cnpj = 05, enderecos_id = 30, nome = 'Taylor', telefone = 84241802 WHERE enderecos_id = 86;
- UPDATE fornecedores SET cnpj = 06, enderecos_id = 31, nome = 'Henrique', telefone = 98236745 WHERE enderecos_id = 87;
- UPDATE fornecedores SET cnpj = 07, enderecos_id = 32, nome = 'Gustavo', telefone = 98712365 WHERE enderecos_id = 88;
- UPDATE fornecedores SET cnpj = 09, enderecos_id = 34, nome = 'Rafael', telefone = 92345568 WHERE enderecos_id = 90;
- UPDATE fornecedores SET cnpj = 10, enderecos_id = 35, nome = 'Vitor', telefone = 91220348 WHERE enderecos_id = 91;
+ UPDATE fornecedores SET cnpj = 01, enderecos_id = 26, nome = 'Marcos', telefone = 92178827 WHERE cnpj = 92;
+ UPDATE fornecedores SET cnpj = 02, enderecos_id = 27, nome = 'Ana', telefone = 92117973 WHERE cnpj =93;
+ UPDATE fornecedores SET cnpj = 03, enderecos_id = 28, nome = 'Renata', telefone = 91853907 WHERE cnpj = 94;
+ UPDATE fornecedores SET cnpj = 04, enderecos_id = 29, nome = 'Lana', telefone = 32241802 WHERE cnpj = 95;
+ UPDATE fornecedores SET cnpj = 05, enderecos_id = 30, nome = 'Taylor', telefone = 84241802 WHERE cnpj = 96;
+ UPDATE fornecedores SET cnpj = 06, enderecos_id = 31, nome = 'Henrique', telefone = 98236745 WHERE cnpj = 97;
+ UPDATE fornecedores SET cnpj = 07, enderecos_id = 32, nome = 'Gustavo', telefone = 98712365 WHERE cnpj = 98;
+ UPDATE fornecedores SET cnpj = 09, enderecos_id = 34, nome = 'Rafael', telefone = 92345568 WHERE cnpj = 99;
+ UPDATE fornecedores SET cnpj = 10, enderecos_id = 35, nome = 'Vitor', telefone = 91220348 WHERE cnpj = 100;
 
 
 -- updates pat
