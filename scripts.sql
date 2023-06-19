@@ -443,25 +443,37 @@ UPDATE vendedores SET salario= 1260.89, nome='Garrete', sobrenome= 'Espinosa', e
 
 
 
--- DELETE FROM produtos WHERE idprodutos = 20;
--- DELETE FROM produtos WHERE idprodutos = 22;
--- DELETE FROM produtos WHERE idprodutos = 23;
--- DELETE FROM produtos WHERE idprodutos = 24;
+ DELETE FROM produtos WHERE idprodutos = 20;
+ DELETE FROM produtos WHERE idprodutos = 22;
+ DELETE FROM produtos WHERE idprodutos = 23;
 
 
 
--- deletes emily alves
- -- DELETE FROM fornecedores WHERE cnpj = 101;
- -- DELETE FROM fornecedores WHERE cnpj = 103;
---  DELETE FROM fornecedores WHERE cnpj = 104;
--- DELETE FROM fornecedores WHERE cnpj = 105;
+-- deletes emily alves e andrieli
+
+DELETE FROM produtos WHERE fornecedores_cnpj = 101;
+DELETE FROM fornecedores WHERE cnpj = 101;
+
+DELETE FROM produtos WHERE fornecedores_cnpj = 101;
+DELETE FROM fornecedores WHERE cnpj = 101;
+
+DELETE FROM produtos WHERE fornecedores_cnpj = 103;
+DELETE FROM fornecedores WHERE cnpj = 103;
+
+DELETE FROM produtos WHERE fornecedores_cnpj = 104;
+DELETE FROM fornecedores WHERE cnpj = 104;
+
+DELETE FROM carrinhos WHERE produtos_idprodutos = 105;
+DELETE FROM produtos WHERE idprodutos = 105;
+
 
 
 
 -- deletes pat
 
+DELETE FROM produtos WHERE fornecedores_cnpj = (SELECT cnpj FROM fornecedores WHERE enderecos_id = 26);
+DELETE FROM fornecedores WHERE enderecos_id = 26;
 
--- DELETE FROM enderecos WHERE id = 1;
  -- DELETE FROM enderecos WHERE id = 2;
  -- DELETE FROM enderecos WHERE id = 3;
  -- DELETE FROM enderecos WHERE id = 4;
@@ -485,19 +497,35 @@ UPDATE vendedores SET salario= 1260.89, nome='Garrete', sobrenome= 'Espinosa', e
  
  SELECT * FROM vendaregistros WHERE clientes_pessoas_cpf = '212213454';
  
-DELETE FROM vendaregistros WHERE clientes_pessoas_cpf = '768541784';
+ DELETE FROM vendaregistros WHERE clientes_pessoas_cpf = '212213454';
+DELETE FROM clientes WHERE pessoas_cpf = '212213454';
+ 
+ 
 
 SELECT * FROM vendaregistros WHERE clientes_pessoas_cpf = '577037388';
 
-DELETE FROM vendaregistros WHERE clientes_pessoas_cpf = '272816143';
+ DELETE FROM vendaregistros WHERE clientes_pessoas_cpf = '654270415';
  
+
  
+ -- DELETE FROM clientes WHERE pessoas_cpf = '212213454';
  
- DELETE FROM clientes WHERE pessoas_cpf = '154986955';
- DELETE FROM clientes WHERE pessoas_cpf = '768541784';
+ SELECT * FROM vendaregistros WHERE clientes_pessoas_cpf = '768541784';
+ 
+ DELETE FROM vendaregistros WHERE clientes_pessoas_cpf = '768541784';
+DELETE FROM clientes WHERE pessoas_cpf = '768541784';
+ 
+
+
  DELETE FROM clientes WHERE pessoas_cpf ='577037388';
- DELETE FROM clientes WHERE pessoas_cpf = '272816143';
- DELETE FROM clientes WHERE pessoas_cpf = '724091791';
+  
+ SELECT * FROM vendaregistros WHERE clientes_pessoas_cpf = '272816143';
+ 
+ DELETE FROM vendaregistros WHERE clientes_pessoas_cpf = '272816143';
+DELETE FROM clientes WHERE pessoas_cpf = '272816143';
+ 
+ -- DELETE FROM clientes WHERE pessoas_cpf = '272816143';
+ DELETE FROM clientes WHERE pessoas_cpf = '654270415';
 
  DELETE FROM carrinhos WHERE vendaRegistros_idvenda = 20;
  DELETE FROM carrinhos WHERE vendaRegistros_idvenda = 21;
