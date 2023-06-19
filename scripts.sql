@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `email` VARCHAR(45) NOT NULL,
   `enderecos_id` INT NOT NULL,
   PRIMARY KEY (`pessoas_cpf`),
-  CONSTRAINT `fk_clientes_enderecos_id` FOREIGN KEY (`enderecos_id`) REFERENCES `enderecos` (`id`)
+  FOREIGN KEY (`enderecos_id`) REFERENCES `enderecos` (`id`)
 );
 
 -- -----------------------------------------------------
@@ -59,8 +59,8 @@ CREATE TABLE IF NOT EXISTS `vendaRegistros` (
     `vendedores_idvendedores`,
     `clientes_pessoas_cpf`
   ),
-  CONSTRAINT `fk_vendaRegistros_vendedores1` FOREIGN KEY (`vendedores_idvendedores`) REFERENCES `vendedores` (`idvendedores`),
-  CONSTRAINT `fk_vendaRegistros_clientes1` FOREIGN KEY (`clientes_pessoas_cpf`) REFERENCES `clientes` (`pessoas_cpf`)
+  FOREIGN KEY (`vendedores_idvendedores`) REFERENCES `vendedores` (`idvendedores`),
+  FOREIGN KEY (`clientes_pessoas_cpf`) REFERENCES `clientes` (`pessoas_cpf`)
 );
 
 -- -----------------------------------------------------
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `fornecedores` (
   `nome` VARCHAR(45) NOT NULL,
   `telefone` INT NOT NULL,
   PRIMARY KEY (`cnpj`),
-  CONSTRAINT `fk_fornecedores_enderecos` FOREIGN KEY (`enderecos_id`) REFERENCES `enderecos` (`id`)
+  FOREIGN KEY (`enderecos_id`) REFERENCES `enderecos` (`id`)
 );
 -- -----------------------------------------------------
 -- Table .`categorias`
@@ -98,8 +98,8 @@ CREATE TABLE IF NOT EXISTS `produtos` (
   `categorias_idcategorias` INT NOT NULL,
   `fornecedores_cnpj` INT NOT NULL,
   PRIMARY KEY (`idprodutos`, `fornecedores_cnpj`),
-  CONSTRAINT `fk_produtos_categorias1` FOREIGN KEY (`categorias_idcategorias`) REFERENCES `categorias` (`idcategorias`),
-  CONSTRAINT `fk_produtos_fornecedores1` FOREIGN KEY (`fornecedores_cnpj`) REFERENCES `fornecedores` (`cnpj`)
+  FOREIGN KEY (`categorias_idcategorias`) REFERENCES `categorias` (`idcategorias`),
+  FOREIGN KEY (`fornecedores_cnpj`) REFERENCES `fornecedores` (`cnpj`)
 );
 
 -- -----------------------------------------------------
@@ -114,8 +114,8 @@ CREATE TABLE IF NOT EXISTS `carrinhos` (
     `vendaRegistros_idvenda`,
     `vendaRegistros_vendedores_idvendedores`
   ),
-  CONSTRAINT `fk_produtos_has_vendaRegistros_produtos1` FOREIGN KEY (`produtos_idprodutos`) REFERENCES `produtos` (`idprodutos`),
-  CONSTRAINT `fk_produtos_has_vendaRegistros_vendaRegistros1` FOREIGN KEY (
+   FOREIGN KEY (`produtos_idprodutos`) REFERENCES `produtos` (`idprodutos`),
+   FOREIGN KEY (
     `vendaRegistros_idvenda`,
     `vendaRegistros_vendedores_idvendedores`
   ) REFERENCES `vendaRegistros` (`idvenda`, `vendedores_idvendedores`)
@@ -341,32 +341,6 @@ insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistr
 -- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (23, 24, 24);
  insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (24, 25, 25);
 
--- inserts emily snow
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (01, 1, 1);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (02, 2, 2);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (03, 3, 3);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (04, 4, 4);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (05, 5, 5);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (06, 6, 6);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (07, 7, 7);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (08, 8, 8);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (09, 9, 9);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (10, 10, 10);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (11, 11, 11);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (12, 12, 12);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (13, 13, 13);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (14, 14, 14);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (15, 15, 15);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (16, 16, 16);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (17, 17, 17);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (18, 18, 18);
-insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (19, 19, 19);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (20, 20, 20);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (21, 21, 21);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (22, 22, 22);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (23, 23, 23);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (24, 24, 24);
- insert into carrinhos (produtos_idprodutos, vendaRegistros_idvenda, vendaRegistros_vendedores_idvendedores) values (25, 25, 25);
 
 -- selects emily alves
  SELECT COUNT(*) FROM produtos;
@@ -400,25 +374,33 @@ SELECT COUNT(*) FROM carrinhos;
  SELECT * FROM carrinhos ORDER BY produtos_idprodutos;
 
 
--- updates emily alves
- UPDATE fornecedores SET cnpj = 01, enderecos_id = 26, nome = 'Marcos', telefone = 92178827 WHERE cnpj LIKE 82;
- UPDATE fornecedores SET cnpj = 02, enderecos_id = 27, nome = 'Ana', telefone = 92117973 WHERE cnpj LIKE 83;
- UPDATE fornecedores SET cnpj = 03, enderecos_id = 28, nome = 'Renata', telefone = 91853907 WHERE cnpj LIKE 84;
- UPDATE fornecedores SET cnpj = 04, enderecos_id = 29, nome = 'Lana', telefone = 32241802 WHERE cnpj LIKE 85;
- UPDATE fornecedores SET cnpj = 05, enderecos_id = 30, nome = 'Taylor', telefone = 84241802 WHERE cnpj LIKE 86;
- UPDATE fornecedores SET cnpj = 06, enderecos_id = 31, nome = 'Henrique', telefone = 98236745 WHERE cnpj LIKE 87;
- UPDATE fornecedores SET cnpj = 07, enderecos_id = 32, nome = 'Gustavo', telefone = 98712365 WHERE cnpj LIKE 88;
- UPDATE fornecedores SET cnpj = 09, enderecos_id = 34, nome = 'Rafael', telefone = 92345568 WHERE cnpj LIKE 90;
- UPDATE fornecedores SET cnpj = 10, enderecos_id = 35, nome = 'Vitor', telefone = 91220348 WHERE cnpj LIKE 91;
 
- UPDATE produtos SET idprodutos = 25, nome = 'Pálio', imagemProduto = '', altura = 9, largura = 17, quantidade = 2, descricao = 'Pálio Cinza', unidadeEmEstoque = 67, categorias_idcategorias = 1, fornecedores_cnpj = 01 WHERE idprodutos LIKE 00;
- UPDATE produtos SET idprodutos = 26, nome = 'Corola', imagemProduto = '', altura = 23, largura = 24, quantidade = 4, descricao = 'Corola 2021 Preto', unidadeEmEstoque = 56, categorias_idcategorias = 2, fornecedores_cnpj = 02 WHERE idprodutos LIKE 01;
- UPDATE produtos SET idprodutos = 28, nome = 'Fusca', imagemProduto = '', altura = 22, largura = 23, quantidade = 2, descricao = 'Fusca Azul', unidadeEmEstoque = 66, categorias_idcategorias = 4, fornecedores_cnpj = 04 WHERE idprodutos LIKE 03;
- UPDATE produtos SET idprodutos = 30, nome = 'Parati', imagemProduto = '', altura = 21, largura = 22, quantidade = 4, descricao = 'Parati Quadrada', unidadeEmEstoque = 55, categorias_idcategorias = 6, fornecedores_cnpj = 06 WHERE idprodutos LIKE 05;
- UPDATE produtos SET idprodutos = 31, nome = 'Gol', imagemProduto = '', altura = 4, largura = 33, quantidade = 1, descricao = 'Gol Quadrado', unidadeEmEstoque = 98, categorias_idcategorias = 7, fornecedores_cnpj = 07 WHERE idprodutos LIKE 06;
- UPDATE produtos SET idprodutos = 32, nome = 'Ferrari', imagemProduto = '', altura = 12, largura = 24, quantidade = 2, descricao = 'Ferrari Vermelha 2022', unidadeEmEstoque = 55, categorias_idcategorias = 8, fornecedores_cnpj = 08 WHERE idprodutos LIKE 07;
- UPDATE produtos SET idprodutos = 33, nome = 'Lamborguini', imagemProduto = '', altura = 15, largura = 35, quantidade = 3, descricao = 'Lamborguini Azul 2023', unidadeEmEstoque = 67, categorias_idcategorias = 9, fornecedores_cnpj = 09 WHERE idprodutos LIKE 08;
- UPDATE produtos SET idprodutos = 34, nome = 'BMW', imagemProduto = '', altura = 12, largura = 22, quantidade = 4, descricao = 'BMW Conversível', unidadeEmEstoque = 96, categorias_idcategorias = 10, fornecedores_cnpj = 10 WHERE idprodutos LIKE 09;
+
+
+
+-- updates pat
+UPDATE enderecos SET cep= '11111', id='1', rua='aaaa', bairro='aaaaa', cidade='aaaa', estado='aaa' WHERE id = 26;
+-- UPDATE enderecos SET cep= '11111', id='2', rua='aaaa', bairro='aaaaa', cidade='aaaa', estado='aaa' WHERE id = 27;
+UPDATE enderecos SET cep= '2222', id='237', rua='aaaa', bairro='aaaaa', cidade='aaaa', estado='aaa' WHERE id = 28;
+UPDATE enderecos SET cep= '33333', id='4', rua='aaaa', bairro='aaaaa', cidade='aaaa', estado='aaa' WHERE id = 29;
+UPDATE enderecos SET cep= '44444', id='5', rua='aaaa', bairro='aaaaa', cidade='aaaa', estado='aaa' WHERE id = 30;
+UPDATE enderecos SET cep= '555555', id='6', rua='aaaa', bairro='aaaaa', cidade='aaaa', estado='aaa' WHERE id = 31;
+UPDATE enderecos SET cep= '66666', id='7', rua='aaaa', bairro='aaaaa', cidade='aaaa', estado='aaa' WHERE id = 32;
+UPDATE enderecos SET cep= '777777', id='8', rua='aaaa', bairro='aaaaa', cidade='aaaa', estado='aaa' WHERE id = 33;
+UPDATE enderecos SET cep= '8888888', id='9', rua='aaaa', bairro='aaaaa', cidade='aaaa', estado='aaa' WHERE id = 34;
+UPDATE enderecos SET cep= '99999', id='10', rua='aaaa', bairro='aaaaa', cidade='aaaa', estado='aaa' WHERE id = 35;
+
+-- updates emily alves
+ UPDATE fornecedores SET cnpj = 01, enderecos_id = 26, nome = 'Marcos', telefone = 92178827 WHERE enderecos_id = 82;
+ UPDATE fornecedores SET cnpj = 02, enderecos_id = 27, nome = 'Ana', telefone = 92117973 WHERE enderecos_id =83;
+ UPDATE fornecedores SET cnpj = 03, enderecos_id = 28, nome = 'Renata', telefone = 91853907 WHERE enderecos_id = 84;
+ UPDATE fornecedores SET cnpj = 04, enderecos_id = 29, nome = 'Lana', telefone = 32241802 WHERE enderecos_id = 85;
+ UPDATE fornecedores SET cnpj = 05, enderecos_id = 30, nome = 'Taylor', telefone = 84241802 WHERE enderecos_id = 86;
+ UPDATE fornecedores SET cnpj = 06, enderecos_id = 31, nome = 'Henrique', telefone = 98236745 WHERE enderecos_id = 87;
+ UPDATE fornecedores SET cnpj = 07, enderecos_id = 32, nome = 'Gustavo', telefone = 98712365 WHERE enderecos_id = 88;
+ UPDATE fornecedores SET cnpj = 09, enderecos_id = 34, nome = 'Rafael', telefone = 92345568 WHERE enderecos_id = 90;
+ UPDATE fornecedores SET cnpj = 10, enderecos_id = 35, nome = 'Vitor', telefone = 91220348 WHERE enderecos_id = 91;
+
 
 -- updates pat
 UPDATE categorias SET categoria = 'compraZero' WHERE idCategorias = 1;
@@ -447,83 +429,73 @@ UPDATE vendedores SET salario= 1260.89, nome='Garrete', sobrenome= 'Espinosa', e
  UPDATE vendedores SET salario= 1950.89, nome='julia', sobrenome= 'helena', email='juliah@cisco.com', porcentagemComissao=12.0 WHERE idVendedores= 9;
  UPDATE vendedores SET salario= 1100.89, nome='miguel', sobrenome= 'henrique', email='miguelh@cisco.com', porcentagemComissao=13.0 WHERE idVendedores= 10;
 
- UPDATE clientes SET nome='marlai', sobrenome='alfavile', email='marlaia@geocities.com', enderecos_id=11 WHERE pessoas_cpf= '222262238';
- UPDATE clientes SET nome='joana', sobrenome='emily', email='joanae@geocities.com', enderecos_id=22 WHERE pessoas_cpf= '212213454';
-UPDATE clientes SET nome='Jofrey', sobrenome='randerei', email='jofreyr@geocities.com', enderecos_id=33 WHERE pessoas_cpf= '829463144';
-UPDATE clientes SET nome='miguela', sobrenome='geters', email='miguelag@geocities.com', enderecos_id=44 WHERE pessoas_cpf= '768541784';
-UPDATE clientes SET nome='olivaras', sobrenome='bendito', email='olivarasb@geocities.com', enderecos_id=55 WHERE pessoas_cpf= '103966036';
- UPDATE clientes SET nome='harry', sobrenome='potter', email='harryp@geocities.com', enderecos_id=66 WHERE pessoas_cpf= '521474768';
- UPDATE clientes SET nome='hermione', sobrenome='granger', email='hermioneg@geocities.com', enderecos_id=77 WHERE pessoas_cpf= '281160955';
-UPDATE clientes SET nome='rony', sobrenome='weasley', email='ronyw@geocities.com', enderecos_id=88 WHERE pessoas_cpf= '882776294';
- UPDATE clientes SET nome='gina', sobrenome='wesley', email='ginaw@geocities.com', enderecos_id=99 WHERE pessoas_cpf= '747483506';
- UPDATE clientes SET nome='alvo', sobrenome='dumbledore', email='alvod@geocities.com', enderecos_id=1010 WHERE pessoas_cpf= '577037388'; 
+
+
 -- ver chave estrangeira de endereços
+ -- DELETE FROM categorias WHERE idCategorias =1;
+ -- DELETE FROM categorias WHERE idCategorias=2;
+ -- DELETE FROM categorias WHERE idCategorias =3;
+ -- DELETE FROM categorias WHERE idCategorias =4;
+ -- DELETE FROM categorias WHERE idCategorias =5;
 
 
--- updates emily snow
- UPDATE carrinhos SET produtos_idprodutos = 11, vendaRegistros_idvenda = 11, vendaRegistros_vendedores_idvendedores = 11 WHERE produtos_idprodutos = 01;
- UPDATE carrinhos SET produtos_idprodutos = 12, vendaRegistros_idvenda = 12, vendaRegistros_vendedores_idvendedores = 12 WHERE produtos_idprodutos = 02;
-UPDATE carrinhos SET produtos_idprodutos = 13, vendaRegistros_idvenda = 13, vendaRegistros_vendedores_idvendedores = 13 WHERE produtos_idprodutos =03;
-UPDATE carrinhos SET produtos_idprodutos = 14, vendaRegistros_idvenda = 14, vendaRegistros_vendedores_idvendedores = 14 WHERE produtos_idprodutos = 04;
-UPDATE carrinhos SET produtos_idprodutos = 15, vendaRegistros_idvenda = 15, vendaRegistros_vendedores_idvendedores = 15 WHERE produtos_idprodutos = 05;
- UPDATE carrinhos SET produtos_idprodutos = 16, vendaRegistros_idvenda = 16, vendaRegistros_vendedores_idvendedores = 16 WHERE produtos_idprodutos = 06;
- UPDATE carrinhos SET produtos_idprodutos = 17, vendaRegistros_idvenda = 17, vendaRegistros_vendedores_idvendedores = 17 WHERE produtos_idprodutos = 07;
- UPDATE carrinhos SET produtos_idprodutos = 18, vendaRegistros_idvenda = 18, vendaRegistros_vendedores_idvendedores = 18 WHERE produtos_idprodutos = 08;
- UPDATE carrinhos SET produtos_idprodutos = 19, vendaRegistros_idvenda = 19, vendaRegistros_vendedores_idvendedores = 19 WHERE produtos_idprodutos = 09;
- UPDATE carrinhos SET produtos_idprodutos = 20, vendaRegistros_idvenda = 20, vendaRegistros_vendedores_idvendedores = 20 WHERE produtos_idprodutos = 10;
- UPDATE carrinhos SET produtos_idprodutos = 101, vendaRegistros_idvenda = 101, vendaRegistros_vendedores_idvendedores = 101 WHERE produtos_idprodutos = 00;
- UPDATE carrinhos SET produtos_idprodutos = 102, vendaRegistros_idvenda = 102, vendaRegistros_vendedores_idvendedores = 102 WHERE produtos_idprodutos = 01;
- UPDATE carrinhos SET produtos_idprodutos = 103, vendaRegistros_idvenda = 103, vendaRegistros_vendedores_idvendedores = 103 WHERE produtos_idprodutos = 02;
- UPDATE carrinhos SET produtos_idprodutos = 104, vendaRegistros_idvenda = 104, vendaRegistros_vendedores_idvendedores = 104 WHERE produtos_idprodutos = 03;
- UPDATE carrinhos SET produtos_idprodutos = 105, vendaRegistros_idvenda = 105, vendaRegistros_vendedores_idvendedores = 105 WHERE produtos_idprodutos = 04;
- UPDATE carrinhos SET produtos_idprodutos = 106, vendaRegistros_idvenda = 106, vendaRegistros_vendedores_idvendedores = 106 WHERE produtos_idprodutos = 05;
- UPDATE carrinhos SET produtos_idprodutos = 107, vendaRegistros_idvenda = 107, vendaRegistros_vendedores_idvendedores = 107 WHERE produtos_idprodutos = 06;
- UPDATE carrinhos SET produtos_idprodutos = 108, vendaRegistros_idvenda = 108, vendaRegistros_vendedores_idvendedores = 108 WHERE produtos_idprodutos = 18;
- UPDATE carrinhos SET produtos_idprodutos = 109, vendaRegistros_idvenda = 109, vendaRegistros_vendedores_idvendedores = 109 WHERE produtos_idprodutos = 08;
- UPDATE carrinhos SET produtos_idprodutos = 110, vendaRegistros_idvenda = 110, vendaRegistros_vendedores_idvendedores = 110 WHERE produtos_idprodutos = 09;
+-- DELETE FROM produtos WHERE categorias_idcategorias = 1;
+
+
+
+-- DELETE FROM produtos WHERE idprodutos = 20;
+-- DELETE FROM produtos WHERE idprodutos = 22;
+-- DELETE FROM produtos WHERE idprodutos = 23;
+-- DELETE FROM produtos WHERE idprodutos = 24;
 
 
 
 -- deletes emily alves
- DELETE FROM fornecedores WHERE cnpj LIKE 101;
- DELETE FROM fornecedores WHERE cnpj LIKE 103;
- DELETE FROM fornecedores WHERE cnpj LIKE 104;
- DELETE FROM fornecedores WHERE cnpj LIKE 105;
+ -- DELETE FROM fornecedores WHERE cnpj = 101;
+ -- DELETE FROM fornecedores WHERE cnpj = 103;
+--  DELETE FROM fornecedores WHERE cnpj = 104;
+-- DELETE FROM fornecedores WHERE cnpj = 105;
 
-DELETE FROM produtos WHERE idprodutos LIKE 20;
-DELETE FROM produtos WHERE idprodutos LIKE 22;
- DELETE FROM produtos WHERE idprodutos LIKE 23;
-DELETE FROM produtos WHERE idprodutos LIKE 24;
+
 
 -- deletes pat
- DELETE FROM categorias WHERE idCategoria =1;
- DELETE FROM categorias WHERE idCategoria =2;
- DELETE FROM categorias WHERE idCategoria =3;
- DELETE FROM categorias WHERE idCategoria =4;
- DELETE FROM categorias WHERE idCategoria =5;
 
- DELETE FROM enderecos WHERE id = 1;
- DELETE FROM enderecos WHERE id = 2;
- DELETE FROM enderecos WHERE id = 3;
- DELETE FROM enderecos WHERE id = 4;
- DELETE FROM enderecos WHERE id = 5;
+
+-- DELETE FROM enderecos WHERE id = 1;
+ -- DELETE FROM enderecos WHERE id = 2;
+ -- DELETE FROM enderecos WHERE id = 3;
+ -- DELETE FROM enderecos WHERE id = 4;
+ -- DELETE FROM enderecos WHERE id = 5;
 
 -- deletes andri
- DELETE FROM vendedores WHERE idVendedores =11;
- DELETE FROM vendedores WHERE idVendedores =12;
- DELETE FROM vendedores WHERE idVendedores =13;
- DELETE FROM vendedores WHERE idVendedores =14;
- DELETE FROM vendedores WHERE idVendedores =15;
+ -- DELETE FROM vendedores WHERE idVendedores =11;
+ -- DELETE FROM vendedores WHERE idVendedores =12;
+ -- DELETE FROM vendedores WHERE idVendedores =13;
+ -- DELETE FROM vendedores WHERE idVendedores =14;
+ -- DELETE FROM vendedores WHERE idVendedores =15;
+
 
 -- deletes emily snow
- DELETE FROM carrinhos WHERE produtos_idprodutos = 12;
- DELETE FROM carrinhos WHERE produtos_idprodutos = 13;
- DELETE FROM carrinhos WHERE produtos_idprodutos = 14;
- DELETE FROM carrinhos WHERE produtos_idprodutos = 15;
+ DELETE FROM carrinhos WHERE produtos_idprodutos = 00;
+ DELETE FROM carrinhos WHERE produtos_idprodutos = 01;
+ DELETE FROM carrinhos WHERE produtos_idprodutos = 02;
+ DELETE FROM carrinhos WHERE produtos_idprodutos = 03;
  DELETE FROM carrinhos WHERE produtos_idprodutos = 16;
- DELETE FROM clientes WHERE pessoas_cpf = '381724267';
- DELETE FROM clientes WHERE pessoas_cpf = '534054225';
- DELETE FROM clientes WHERE pessoas_cpf ='154986955';
+ 
+ 
+ SELECT * FROM vendaregistros WHERE clientes_pessoas_cpf = '212213454';
+ 
+DELETE FROM vendaregistros WHERE clientes_pessoas_cpf = '768541784';
+
+SELECT * FROM vendaregistros WHERE clientes_pessoas_cpf = '577037388';
+
+DELETE FROM vendaregistros WHERE clientes_pessoas_cpf = '272816143';
+ 
+ 
+ 
+ DELETE FROM clientes WHERE pessoas_cpf = '154986955';
+ DELETE FROM clientes WHERE pessoas_cpf = '768541784';
+ DELETE FROM clientes WHERE pessoas_cpf ='577037388';
  DELETE FROM clientes WHERE pessoas_cpf = '272816143';
  DELETE FROM clientes WHERE pessoas_cpf = '724091791';
 
@@ -532,25 +504,7 @@ DELETE FROM produtos WHERE idprodutos LIKE 24;
  DELETE FROM carrinhos WHERE vendaRegistros_idvenda = 22;
  DELETE FROM carrinhos WHERE vendaRegistros_idvenda = 23;
  DELETE FROM carrinhos WHERE vendaRegistros_idvenda = 24;
-
- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 1;
- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 2;
- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 3;
- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 4;
- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 5;
-
--- deletes emily snow
-DELETE FROM carrinhos WHERE produtos_idprodutos = 101;
- DELETE FROM carrinhos WHERE produtos_idprodutos = 102;
- DELETE FROM carrinhos WHERE produtos_idprodutos = 103;
-
- DELETE FROM carrinhos WHERE vendaRegistros_idvenda = 104;
- DELETE FROM carrinhos WHERE vendaRegistros_idvenda = 105;
- DELETE FROM carrinhos WHERE vendaRegistros_idvenda = 107;
- DELETE FROM carrinhos WHERE vendaRegistros_idvenda = 108;
-
- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores = 104;
- DELETE FROM carrinhos WHERE vendaRegistros_vendedores_idvendedores =102;
+ 
 
 
 
