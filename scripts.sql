@@ -296,13 +296,13 @@ insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vend
  insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('8', 'credito', '2023-3-18', '1008.27', 'convallis',8,882776294 );
  insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('9', 'debito', '2023-1-24', '1275.99', 'vivamus', 9,747483506 );
  
- -- ert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('10', 'dinheiro', '2023-2-7', '938.88', 'nibh', 10,577037388 );
+ -- insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('10', 'dinheiro', '2023-2-7', '938.88', 'nibh', 10,577037388 );
  
  insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('11', 'dinheiro', '2023-3-5', '1845.88', 'faucibus', 11, 133181424);
  insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('12', 'credito', '2023-9-3', '584.73', 'enim', 12,431436733 );
 -- insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('13', 'credito', '2023-11-9', '1671.18', 'et ', 13,285139482 );
  insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('14', 'credito', '2023-10-19', '128.73', 'sapien', 14, 381724267);
- -- ert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('15', 'credito', '2023-7-30', '259.68', 'sollicitudin', 15,534054225);
+ -- insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('15', 'credito', '2023-7-30', '259.68', 'sollicitudin', 15,534054225);
  -- insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('16', 'credito', '2021-3-8', '227.27', 'libero', 16,154986955 );
  insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('17', 'credito', '2023-4-26', '1808.33', 'gravida', 17,272816143 );
  -- insert into vendaRegistros (idvenda, formaPagamento, data, valor, carrinho, vendedores_idvendedores, clientes_pessoas_cpf) values ('18', 'credito', '2023-2-19', '302.56', 'vitae', 18,724091791 );
@@ -391,15 +391,15 @@ UPDATE enderecos SET cep= '8888888', id='9', rua='aaaa', bairro='aaaaa', cidade=
 UPDATE enderecos SET cep= '99999', id='10', rua='aaaa', bairro='aaaaa', cidade='aaaa', estado='aaa' WHERE id = 35;
 
 -- updates emily alves
- UPDATE fornecedores SET cnpj = 01, enderecos_id = 26, nome = 'Marcos', telefone = 92178827 WHERE cnpj = 92;
- UPDATE fornecedores SET cnpj = 02, enderecos_id = 27, nome = 'Ana', telefone = 92117973 WHERE cnpj =93;
- UPDATE fornecedores SET cnpj = 03, enderecos_id = 28, nome = 'Renata', telefone = 91853907 WHERE cnpj = 94;
- UPDATE fornecedores SET cnpj = 04, enderecos_id = 29, nome = 'Lana', telefone = 32241802 WHERE cnpj = 95;
- UPDATE fornecedores SET cnpj = 05, enderecos_id = 30, nome = 'Taylor', telefone = 84241802 WHERE cnpj = 96;
- UPDATE fornecedores SET cnpj = 06, enderecos_id = 31, nome = 'Henrique', telefone = 98236745 WHERE cnpj = 97;
- UPDATE fornecedores SET cnpj = 07, enderecos_id = 32, nome = 'Gustavo', telefone = 98712365 WHERE cnpj = 98;
- UPDATE fornecedores SET cnpj = 09, enderecos_id = 34, nome = 'Rafael', telefone = 92345568 WHERE cnpj = 99;
- UPDATE fornecedores SET cnpj = 10, enderecos_id = 35, nome = 'Vitor', telefone = 91220348 WHERE cnpj = 100;
+ UPDATE fornecedores SET enderecos_id = 26, nome = 'Marcos', telefone = 92178827 WHERE cnpj = 92;
+ UPDATE fornecedores SET  enderecos_id = 27, nome = 'Ana', telefone = 92117973 WHERE cnpj =93;
+ UPDATE fornecedores SET  enderecos_id = 28, nome = 'Renata', telefone = 91853907 WHERE cnpj = 94;
+ UPDATE fornecedores SET  enderecos_id = 29, nome = 'Lana', telefone = 32241802 WHERE cnpj = 95;
+ UPDATE fornecedores SET  enderecos_id = 30, nome = 'Taylor', telefone = 84241802 WHERE cnpj = 96;
+ UPDATE fornecedores SET enderecos_id = 31, nome = 'Henrique', telefone = 98236745 WHERE cnpj = 97;
+ UPDATE fornecedores SET  enderecos_id = 32, nome = 'Gustavo', telefone = 98712365 WHERE cnpj = 98;
+ UPDATE fornecedores SET  enderecos_id = 34, nome = 'Rafael', telefone = 92345568 WHERE cnpj = 99;
+ UPDATE fornecedores SET  enderecos_id = 35, nome = 'Vitor', telefone = 91220348 WHERE cnpj = 100;
 
 
 -- updates pat
