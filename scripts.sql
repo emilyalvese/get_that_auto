@@ -431,21 +431,33 @@ UPDATE vendedores SET salario= 1260.89, nome='Garrete', sobrenome= 'Espinosa', e
 
 
 
--- ver chave estrangeira de endereços
- -- DELETE FROM categorias WHERE idCategorias =1;
- -- DELETE FROM categorias WHERE idCategorias=2;
- -- DELETE FROM categorias WHERE idCategorias =3;
- -- DELETE FROM categorias WHERE idCategorias =4;
- -- DELETE FROM categorias WHERE idCategorias =5;
+-- deletes andri, patricia e emily (?)
+DELETE FROM carrinhos WHERE produtos_idprodutos = (SELECT idprodutos FROM produtos WHERE categorias_idcategorias = 1);
+DELETE FROM produtos WHERE categorias_idcategorias = 1; DELETE FROM produtos WHERE idprodutos = 22;
 
 
--- DELETE FROM produtos WHERE categorias_idcategorias = 1;
+DELETE FROM carrinhos WHERE produtos_idprodutos = (SELECT idprodutos FROM produtos WHERE categorias_idcategorias = 2);
+DELETE FROM produtos WHERE categorias_idcategorias = 2; DELETE FROM produtos WHERE idprodutos = 23;
 
 
 
+
+DELETE FROM carrinhos WHERE produtos_idprodutos = 24;
+DELETE FROM produtos WHERE idprodutos = 24;
+
+
+
+
+DELETE FROM carrinhos WHERE produtos_idprodutos = 10;
+DELETE FROM produtos WHERE idprodutos = 10;
+
+
+
+
+
+
+DELETE FROM carrinhos WHERE produtos_idprodutos = 20;
  DELETE FROM produtos WHERE idprodutos = 20;
- DELETE FROM produtos WHERE idprodutos = 22;
- DELETE FROM produtos WHERE idprodutos = 23;
 
 
 
@@ -508,7 +520,6 @@ SELECT * FROM vendaregistros WHERE clientes_pessoas_cpf = '577037388';
  
 
  
- -- DELETE FROM clientes WHERE pessoas_cpf = '212213454';
  
  SELECT * FROM vendaregistros WHERE clientes_pessoas_cpf = '768541784';
  
@@ -524,7 +535,6 @@ DELETE FROM clientes WHERE pessoas_cpf = '768541784';
  DELETE FROM vendaregistros WHERE clientes_pessoas_cpf = '272816143';
 DELETE FROM clientes WHERE pessoas_cpf = '272816143';
  
- -- DELETE FROM clientes WHERE pessoas_cpf = '272816143';
  DELETE FROM clientes WHERE pessoas_cpf = '654270415';
 
  DELETE FROM carrinhos WHERE vendaRegistros_idvenda = 20;
